@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("HelveticaNeue-Roman"), url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+}
+@font-face {
+  font-family: "HelveticaNeue";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("HelveticaNeue-Medium"), url("../fonts/HelveticaNeue-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Poppins-Regular"), url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Poppins-Medium"), url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins";
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Poppins-SemiBold"), url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  font-size: 0;
+}
+.container {
+  margin: 0 15px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .container {
+    margin: 0 30px;
+    padding: 0;
+  }
+}
+@media (min-width: 1260px) {
+  .container {
+    margin: 0 322px;
+    padding: 0;
+  }
+}
+.page {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+.page__body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1260px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "HelveticaNeue", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style.css.map */

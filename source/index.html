@@ -2,81 +2,104 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Shoplist</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
   <header class="header">
-    <div class="container">
+    <div class="header__container container">
       <div class="header__top">
         <div class="contacts contacts--header">
-          <span class="contacts__text">Good Luck With Shopping</span>
+          <span class="contacts__text">Good Luck With Shopping.</span>
           <span class="contacts__text">Call Us Free 24/7:</span>
-          <a class="contacts__phone-link" href="tel:5551722447888">(555) 172-244-7888</a>
-          <a class="contacts__phone-link" href="tel:555172244">(555) 172-244</a>
+          <a class="contacts__phone-link contacts__text" href="tel:5551722447888">(555) 172-244-7888</a>
+          <a class="contacts__phone-link contacts__text" href="tel:555172244">(555) 172-244</a>
         </div>
         <div class="header__links">
           <div class="header__links-wrapper">
-            <a class="header__favorites" href="#">
-              <img src="#" width="" height="" alt="">
-              <span>Wish List</span>
-              <span>(0)</span>
+            <a class="header__link" href="#">
+              <span class="header__link-text header__link-text--favorites">Wish List</span>
+              <span class="header__link-text header__link-text">(0)</span>
             </a>
           </div>
           <div class="header__links-wrapper">
-            <a class="header__checkout" href="#">
-              <img src="#" width="" height="" alt="">
-              <span>Checkout</span>
+            <a class="header__link" href="#">
+              <span class="header__link-text header__link-text--checkout">Checkout</span>
             </a>
           </div>
         </div>
       </div>
       <div class="header__main">
         <div class="logo">
-          <img class="logo__img" src="" width="" height="" alt="">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/desktop/logo.png" width="177" height="28" alt="Company logo">
+          </a>
         </div>
         <div class="form">
           <form class="form__search" method="post" action="#">
             <label class="visually-hidden" for="searchfield">Search field</label>
             <input class="form__input" type="search" name="search" value="" id="searchfield" placeholder="Search">
-            <button class="form__button form__button--search" type="button">
+            <button class="button button__search" type="button">
               <span class="visually-hidden">Button search</span>
             </button>
           </form>
         </div>
-        <div class="main-menu">
-          <div class="main-menu__authorization">
-            <img src="#" width="" height="" alt="">
-            <span class="main-menu__account">My Account</span>
+        <div class="header__menu">
+          <div class="header____authorization">
+            <a class="header__menu-link" href="#">
+              <svg class="header__menu-icon" width="23px" height="23px" viewBox="0 0 1 1.02">
+                <path id="path1194" class="header__menu-icon--fill header__menu-icon--stroke" d="M0.98 1l-0.96 0c0.04,-0.16 0.1,-0.29 0.23,-0.33l0.48 0c0.17,0.06 0.22,0.19 0.25,0.33l0 0zm-0.25 -0.73c0,-0.14 -0.1,-0.25 -0.24,-0.25 -0.13,0 -0.24,0.11 -0.24,0.25 0,0.13 0.11,0.25 0.24,0.25 0.14,0 0.24,-0.12 0.24,-0.25z"/>
+              </svg>
+              <span class="header__menu-text header__menu-text--account">My Account</span>
+            </a>
           </div>
-          <div class="main-menu__text">
-            <img src="#" width="" height="" alt="">
-            <span class="main-menu__text main-menu__text--cart">My Cart</span>
+          <div class="header__basket">
+            <a class="header__menu-link" href="#">
+              <svg class="header__menu-icon" width="23px" height="23px" viewBox="0 0 2.09 2.02">
+                 <polyline class="header__menu-icon--fill header__menu-icon--stroke-cart" points="0,0.03 0.23,0.02 0.51,1.3 1.8,1.29 2.06,0.29 0.29,0.29 "/>
+                 <path class="header__menu-icon--fill header__menu-icon--stroke-cart" d="M1.81 1.3c0.21,0.1 0.21,0.23 0,0.36l-1.3 0"/>
+                 <line class="header__menu-icon--fill header__menu-icon--stroke-cart" x1="0.83" y1="0.55" x2="0.83" y2= "1.09" />
+                 <line class="header__menu-icon--fill header__menu-icon--stroke-cart" x1="1.19" y1="0.55" x2="1.19" y2= "1.09" />
+                 <line class="header__menu-icon--fill header__menu-icon--stroke-cart" x1="1.49" y1="0.55" x2="1.49" y2= "1.09" />
+                 <ellipse class="header__menu-icon--fill header__menu-icon--stroke-cart" cx="0.67" cy="1.84" rx="0.17" ry="0.15"/>
+                 <ellipse class="header__menu-icon--fill header__menu-icon--stroke-cart" cx="1.66" cy="1.84" rx="0.17" ry="0.15"/>
+              </svg>
+              <span class="header__menu-text header__menu-text--cart">My Cart</span>
+            </a>
           </div>
         </div>
       </div>
       <div class="header__footer">
-        <nav class="main-nav">
-          <button class="main-nav__button-toggle button-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__button main-nav__button-toggle" type="button"><span class="visually-hidden">Open/close menu</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="#">Home</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Clothes</a>
-              <div class="main-nav__submenu">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="#">Clothes</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--clothes main-nav__submenu--closed">
                 <div class="main-nav__submenu-section">
-                  <h3 class="main-nav__submenu-title">Kids</h3>
-                  <ul class="main-nav__submenu-list">
+                  <h3 class="main-nav__submenu-title main-nav__text">
+                    <span class="main-nav__submenu-text">Kids</span>
+                    <span class="main-nav__submenu-arrow" aria-label="Open/close submenu list"></span>
+                  </h3>
+                  <ul class="main-nav__submenu-list main-nav__submenu-list--closed">
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Capri</a></li>
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Jacket</a></li>
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Shorts</a></li>
                   </ul>
                 </div>
                 <div class="main-nav__submenu-section">
-                  <h3 class="main-nav__submenu-title">Women</h3>
-                  <ul class="main-nav__submenu-list">
+                  <h3 class="main-nav__submenu-title main-nav__text">
+                    <span class="main-nav__submenu-text">Women</span>
+                    <span class="main-nav__submenu-arrow" aria-label="Open/close submenu list"></span>
+                  </h3>
+                  <ul class="main-nav__submenu-list main-nav__submenu-list--closed">
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Dresses</a></li>
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Frocks</a></li>
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Saree</a></li>
@@ -84,8 +107,11 @@
                   </ul>
                 </div>
                 <div class="main-nav__submenu-section">
-                  <h3 class="main-nav__submenu-title">Men</h3>
-                  <ul class="main-nav__submenu-list">
+                  <h3 class="main-nav__submenu-title main-nav__text">
+                    <span class="main-nav__submenu-text">Men</span>
+                    <span class="main-nav__submenu-arrow" aria-label="Open/close submenu list"></span>
+                  </h3>
+                  <ul class="main-nav__submenu-list main-nav__submenu-list--closed">
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Denim</a></li>
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Jeans</a></li>
                     <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Shirts</a></li>
@@ -95,13 +121,14 @@
               </div>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Accesories</a>
-              <div class="main-nav__submenu">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="form.html">Accesories</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--closed">
                 <div class="main-nav__submenu-section">
-                  <ul class="main-nav__submenu-list">
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Cap</a></li>
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Handbags</a></li>
-                  </ul>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Cap</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Handbags</a></h3>
                 </div>
               </div>
             </li>
@@ -109,30 +136,32 @@
               <a class="main-nav__link" href="form.html">Art</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Kitchen Accessories</a>
-              <div class="main-nav__submenu">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="#">Kitchen Accessories</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--closed">
                 <div class="main-nav__submenu-section">
-                  <ul class="main-nav__submenu-list">
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Blender</a></li>
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Colander</a></li>
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Cutting Board</a></li>
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Mixing Bowls.</a></li>
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Rolling Pin</a></li>
-                  </ul>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Blender</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Colander</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Cutting Board</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Mixing Bowls.</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Rolling Pin</a></h3>
                 </div>
               </div>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Smart Watch</a>
+              <a class="main-nav__link" href="#">Smart Watch</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">More</a>
-              <div class="main-nav__submenu">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="#">More</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--closed">
                 <div class="main-nav__submenu-section">
-                  <ul class="main-nav__submenu-list">
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Electronics</a></li>
-                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Home Accessories</a></li>
-                  </ul>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Electronics</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Home Accessories</a></h3>
                 </div>
               </div>
             </li>
@@ -1000,6 +1029,19 @@
               <a class="blog__link" href="#" title="Click to read more"></a>
             </div>
             <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+            <h3 class="blog__title">ligula quam Vestibulum consequat convallis</h3>
+          </article>
+        </div>
+
+
+        <div class="blog__item">
+          <article class="blog__card">
+            <div class="blog__inner">
+              <img class="blog__img" src="#" width="" height="" alt="">
+              <button class="blog__button" type="button" title="Click to view full image"></button>
+              <a class="blog__link" href="#" title="Click to read more"></a>
+            </div>
+            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
             <h3 class="blog__title">Laoreet Vestibulum lacinia massa a commodo habitasse velit</h3>
           </article>
         </div>
@@ -1238,5 +1280,6 @@
       <span class="visually-hidden">Перейти в начало страницы</span>
     </button>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

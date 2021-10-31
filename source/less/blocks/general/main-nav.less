@@ -1,0 +1,457 @@
+.main-nav {
+  position: relative;
+  .offset(10px 0 0 0; 0);
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: @grey1;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+}
+
+.main-nav__button {
+  display: block;
+  .offset(0; 0);
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main-nav__button-toggle {
+  display: none;
+}
+
+.main-nav__button-submenu {
+  display: none;
+}
+
+.main-nav__list {
+  .offset(0; 5px);
+  list-style: none;
+  transition: 0.5s ease;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+
+.main-nav__item {
+  position: relative;
+  transition: 0.4s linear;
+
+  @media (min-width: @desktop-width) {
+    &:hover {
+      background-color: @purple;
+      border-radius: 5px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation-name: linkhover;
+        animation-duration: 0.4s;
+        background-color: @purple2;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+
+.main-nav__item:hover .main-nav__link {
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
+}
+
+.main-nav__link,
+.main-nav__text {
+  position: relative;
+  display: block;
+  padding: 10px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: @black;
+  transition: 0.3s linear;
+
+  &:hover,
+  &:focus {
+    color: @purple;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.main-nav__link {
+  position: relative;
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+}
+
+.main-nav__submenu {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    visibility: hidden;
+    min-width: 200px;
+    padding: 10px 20px 10px 20px;
+    background-color: @white;
+    border-color: @grey3;
+    box-shadow: 0 6px 12px @black1;
+    z-index: 5;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s ease;
+  }
+}
+
+.main-nav__submenu-section {
+  @media (min-width: @desktop-width) {
+    flex-grow: 1;
+    max-width: 190px;
+  }
+}
+
+.main-nav__submenu--clothes {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 610px;
+  }
+}
+
+.main-nav__control:hover + .main-nav__submenu,
+.main-nav__submenu:hover {
+  @media (min-width: @desktop-width) {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-nav__submenu-title {
+  .offset(0; 0);
+}
+
+.main-nav__text {
+  position: relative;
+  .offset(0; 10px);
+
+  @media (min-width: @desktop-width) {
+
+    font-size: 13px;
+    color: @purple;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 10px;
+      width: 160px;
+      height: 1px;
+      background-color: @purple;
+    }
+  }
+}
+
+.main-nav__submenu-arrow {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__submenu-list {
+  .offset(0; 0 0 0 20px);
+  list-style: none;
+  transition: 0.5s ease;
+
+  @media (min-width: @desktop-width) {
+    visibility: hidden;
+    padding-left: 0;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+}
+
+.main-nav__submenu-link {
+  display: block;
+  padding: 10px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: @black;
+  transition: 0.3s ease;
+
+  &:hover {
+    color: @purple;
+  }
+}
+
+.main-nav__control:hover + .main-nav__submenu .main-nav__submenu-list,
+.main-nav__submenu:hover .main-nav__submenu-list {
+  @media (min-width: @desktop-width) {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: @tablet-width-only) {
+  .main-nav__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .main-nav__button-toggle {
+    display: block;
+    position: absolute;
+    top: -91px;
+    left: 0;
+    width: 19px;
+    height: 21px;
+    .offset(0; 0);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      transition: 0.3s ease;
+    }
+
+    &::before {
+      top: 10px;
+      left: 0;
+      width: 19px;
+      height: 2px;
+      background-color: @black;
+      box-shadow: 0 6px 0 0 @black,
+        0 -6px 0 0 @black;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .main-nav--closed .main-nav__button-toggle {
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        background-color: @purple;
+        box-shadow: 0 6px 0 0 @purple,
+          0 -6px 0 0 @purple;
+      }
+    }
+  }
+
+  .main-nav--closed .main-nav__list {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    border: 1px solid transparent;
+    transform: translateY(-50px);
+  }
+
+  .main-nav--closed .main-nav__item {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+  }
+
+  .main-nav--opened .main-nav__button-toggle {
+    &::before,
+    &::after {
+      top: 0;
+      width: 2px;
+      height: 19px;
+      background-color: @black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+      left: 9px;
+    }
+
+    &::after {
+      right: 8px;
+      transform: rotate(-45deg);
+    }
+
+    &:hover,
+    &:focus {
+      &::before,
+      &::after {
+        background-color: @purple;
+      }
+    }
+  }
+
+  .main-nav--opened .main-nav__list {
+    visibility: visible;
+    width: 100%;
+    min-height: 310px;
+    border-color: @grey3;
+    box-shadow: 0 6px 12px @black1;
+    background-color: @white;
+    opacity: 1;
+    z-index: 100;
+    transform: translateY(0);
+  }
+
+  .main-nav--opened .main-nav__item {
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+  }
+
+  .main-nav__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .offset(0; 0 10px 0 0);
+  }
+
+  .main-nav__button-submenu {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20px' height='12px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.12 0.07' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%234D4D4D%7D .fil1 %7Bfill:black;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Crect class='fil0' x='4.15' y='-2.37' width='11.69' height='16.53'/%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg%3E%3Cpath class='fil1' d='M0.02 0.01l-0.01 0.01 -0.01 -0.01 0.01 -0.01 0.01 0.01zm0.03 0.05l-0.04 -0.04 0.01 -0.01 0.04 0.04 0 0.01 -0.01 0zm0.01 0l0 0.01 -0.01 -0.01 0.01 0zm0.05 -0.04l-0.05 0.04 -0.01 -0.01 0.05 -0.04 0.01 0.01zm0 0l-0.01 -0.01 0.01 -0.01 0.01 0.01 -0.01 0.01z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 15px 7.5px;
+    background-position: center center;
+    transition: 0.3s ease;
+
+    &:hover,
+    &:focus {
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20px' height='12px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.12 0.07' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%234D4D4D%7D .fil1 %7Bfill:%239174ce;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Crect class='fil0' x='4.15' y='-2.37' width='11.69' height='16.53'/%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg%3E%3Cpath class='fil1' d='M0.02 0.01l-0.01 0.01 -0.01 -0.01 0.01 -0.01 0.01 0.01zm0.03 0.05l-0.04 -0.04 0.01 -0.01 0.04 0.04 0 0.01 -0.01 0zm0.01 0l0 0.01 -0.01 -0.01 0.01 0zm0.05 -0.04l-0.05 0.04 -0.01 -0.01 0.05 -0.04 0.01 0.01zm0 0l-0.01 -0.01 0.01 -0.01 0.01 0.01 -0.01 0.01z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+  }
+
+  .main-nav__button-submenu--rotate {
+    transform: rotate(180deg);
+  }
+
+  .main-nav__submenu {
+    .offset(0; 0 0 0 20px);
+    transition: 0.5s ease;
+  }
+
+  .main-nav__submenu--closed.main-nav__submenu {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+    padding-bottom: 0;
+  }
+
+  .main-nav__submenu--closed .main-nav__submenu-section {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  .main-nav__submenu--opened.main-nav__submenu {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    background-color: @white;
+    opacity: 1;
+    z-index: 100;
+    padding-bottom: 10px;
+    transform: translateY(0);
+    transition: opacity 1.5s;
+  }
+
+  .main-nav__submenu--opened .main-nav__submenu-section {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+  }
+
+  .main-nav__link--submenu {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='15px' height='7.5px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.12 0.07' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%234D4D4D%7D .fil1 %7Bfill:black;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Crect class='fil0' x='4.15' y='-2.37' width='11.69' height='16.53'/%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg%3E%3Cpath class='fil1' d='M0.02 0.01l-0.01 0.01 -0.01 -0.01 0.01 -0.01 0.01 0.01zm0.03 0.05l-0.04 -0.04 0.01 -0.01 0.04 0.04 0 0.01 -0.01 0zm0.01 0l0 0.01 -0.01 -0.01 0.01 0zm0.05 -0.04l-0.05 0.04 -0.01 -0.01 0.05 -0.04 0.01 0.01zm0 0l-0.01 -0.01 0.01 -0.01 0.01 0.01 -0.01 0.01z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+      background-size: contain;
+    }
+  }
+
+  .main-nav__submenu-list--closed.main-nav__submenu-list {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    padding-bottom: 0;
+    transition: 0.5s ease, opacity 0.4s ease;
+  }
+
+  .main-nav__submenu-list--opened.main-nav__submenu-list {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    opacity: 1;
+    transition: opacity 1.5s;
+  }
+
+  .main-nav__submenu-title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .main-nav__submenu-arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20px' height='12px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.12 0.07' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%234D4D4D%7D .fil1 %7Bfill:black;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Crect class='fil0' x='4.15' y='-2.37' width='11.69' height='16.53'/%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg%3E%3Cpath class='fil1' d='M0.02 0.01l-0.01 0.01 -0.01 -0.01 0.01 -0.01 0.01 0.01zm0.03 0.05l-0.04 -0.04 0.01 -0.01 0.04 0.04 0 0.01 -0.01 0zm0.01 0l0 0.01 -0.01 -0.01 0.01 0zm0.05 -0.04l-0.05 0.04 -0.01 -0.01 0.05 -0.04 0.01 0.01zm0 0l-0.01 -0.01 0.01 -0.01 0.01 0.01 -0.01 0.01z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: 15px 7.5px;
+    background-position: center center;
+    transition: 0.3s ease;
+  }
+}
+
+.main-nav__submenu-title:hover .main-nav__submenu-arrow {
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='20px' height='12px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 0.12 0.07' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%234D4D4D%7D .fil1 %7Bfill:%239174ce;fill-rule:nonzero%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Crect class='fil0' x='4.15' y='-2.37' width='11.69' height='16.53'/%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cg%3E%3Cpath class='fil1' d='M0.02 0.01l-0.01 0.01 -0.01 -0.01 0.01 -0.01 0.01 0.01zm0.03 0.05l-0.04 -0.04 0.01 -0.01 0.04 0.04 0 0.01 -0.01 0zm0.01 0l0 0.01 -0.01 -0.01 0.01 0zm0.05 -0.04l-0.05 0.04 -0.01 -0.01 0.05 -0.04 0.01 0.01zm0 0l-0.01 -0.01 0.01 -0.01 0.01 0.01 -0.01 0.01z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}

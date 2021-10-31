@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>Shoplist</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__top">
+        <div class="contacts contacts--header">
+          <span class="contacts__text">Good Luck With Shopping.</span>
+          <span class="contacts__text">Call Us Free 24/7:</span>
+          <a class="contacts__phone-link contacts__text" href="tel:5551722447888">(555) 172-244-7888</a>
+          <a class="contacts__phone-link contacts__text" href="tel:555172244">(555) 172-244</a>
+        </div>
+        <div class="header__links">
+          <div class="header__links-wrapper">
+            <a class="header__link" href="#">
+              <span class="header__link-text header__link-text--favorites">Wish List</span>
+              <span class="header__link-text header__link-text">(0)</span>
+            </a>
+          </div>
+          <div class="header__links-wrapper">
+            <a class="header__link" href="#">
+              <span class="header__link-text header__link-text--checkout">Checkout</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="img/desktop/logo.png" width="177" height="28" alt="Company logo">
+          </a>
+        </div>
+        <div class="form">
+          <form class="form__search" method="post" action="#">
+            <label class="visually-hidden" for="searchfield">Search field</label>
+            <input class="form__input" type="search" name="search" value="" id="searchfield" placeholder="Search">
+            <button class="button button__search" type="button">
+              <span class="visually-hidden">Button search</span>
+            </button>
+          </form>
+        </div>
+        <div class="header__menu">
+          <div class="header____authorization">
+            <a class="header__menu-link" href="#">
+              <svg class="header__menu-icon" width="23px" height="23px" viewBox="0 0 1 1.02">
+                <path id="path1194" class="header__menu-icon--fill header__menu-icon--stroke" d="M0.98 1l-0.96 0c0.04,-0.16 0.1,-0.29 0.23,-0.33l0.48 0c0.17,0.06 0.22,0.19 0.25,0.33l0 0zm-0.25 -0.73c0,-0.14 -0.1,-0.25 -0.24,-0.25 -0.13,0 -0.24,0.11 -0.24,0.25 0,0.13 0.11,0.25 0.24,0.25 0.14,0 0.24,-0.12 0.24,-0.25z"/>
+              </svg>
+              <span class="header__menu-text header__menu-text--account">My Account</span>
+            </a>
+          </div>
+          <div class="header__basket">
+            <a class="header__menu-link" href="#">
+              <svg class="header__menu-icon" width="23px" height="23px" viewBox="0 0 2.09 2.02">
+                 <polyline class="header__menu-icon--fill header__menu-icon--stroke-cart" points="0,0.03 0.23,0.02 0.51,1.3 1.8,1.29 2.06,0.29 0.29,0.29 "/>
+                 <path class="header__menu-icon--fill header__menu-icon--stroke-cart" d="M1.81 1.3c0.21,0.1 0.21,0.23 0,0.36l-1.3 0"/>
+                 <line class="header__menu-icon--fill header__menu-icon--stroke-cart" x1="0.83" y1="0.55" x2="0.83" y2= "1.09" />
+                 <line class="header__menu-icon--fill header__menu-icon--stroke-cart" x1="1.19" y1="0.55" x2="1.19" y2= "1.09" />
+                 <line class="header__menu-icon--fill header__menu-icon--stroke-cart" x1="1.49" y1="0.55" x2="1.49" y2= "1.09" />
+                 <ellipse class="header__menu-icon--fill header__menu-icon--stroke-cart" cx="0.67" cy="1.84" rx="0.17" ry="0.15"/>
+                 <ellipse class="header__menu-icon--fill header__menu-icon--stroke-cart" cx="1.66" cy="1.84" rx="0.17" ry="0.15"/>
+              </svg>
+              <span class="header__menu-text header__menu-text--cart">My Cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__footer">
+        <nav class="main-nav main-nav--closed">
+          <button class="main-nav__button main-nav__button-toggle" type="button"><span class="visually-hidden">Open/close menu</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Home</a>
+            </li>
+            <li class="main-nav__item">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="#">Clothes</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--clothes main-nav__submenu--closed">
+                <div class="main-nav__submenu-section">
+                  <h3 class="main-nav__submenu-title main-nav__text">
+                    <span class="main-nav__submenu-text">Kids</span>
+                    <span class="main-nav__submenu-arrow" aria-label="Open/close submenu list"></span>
+                  </h3>
+                  <ul class="main-nav__submenu-list main-nav__submenu-list--closed">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Capri</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Jacket</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Shorts</a></li>
+                  </ul>
+                </div>
+                <div class="main-nav__submenu-section">
+                  <h3 class="main-nav__submenu-title main-nav__text">
+                    <span class="main-nav__submenu-text">Women</span>
+                    <span class="main-nav__submenu-arrow" aria-label="Open/close submenu list"></span>
+                  </h3>
+                  <ul class="main-nav__submenu-list main-nav__submenu-list--closed">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Dresses</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Frocks</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Saree</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Suits</a></li>
+                  </ul>
+                </div>
+                <div class="main-nav__submenu-section">
+                  <h3 class="main-nav__submenu-title main-nav__text">
+                    <span class="main-nav__submenu-text">Men</span>
+                    <span class="main-nav__submenu-arrow" aria-label="Open/close submenu list"></span>
+                  </h3>
+                  <ul class="main-nav__submenu-list main-nav__submenu-list--closed">
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Denim</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Jeans</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">Shirts</a></li>
+                    <li class="main-nav__submenu-item"><a class="main-nav__submenu-link" href="#">T-Shirts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="form.html">Accesories</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--closed">
+                <div class="main-nav__submenu-section">
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Cap</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Handbags</a></h3>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Art</a>
+            </li>
+            <li class="main-nav__item">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="#">Kitchen Accessories</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--closed">
+                <div class="main-nav__submenu-section">
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Blender</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Colander</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Cutting Board</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Mixing Bowls.</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Rolling Pin</a></h3>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Smart Watch</a>
+            </li>
+            <li class="main-nav__item">
+              <div class="main-nav__control">
+                <a class="main-nav__link" href="#">More</a>
+                <button class="main-nav__button main-nav__button-submenu" type="button"><span class="visually-hidden">Open/close submenu</span></button>
+              </div>
+              <div class="main-nav__submenu main-nav__submenu--closed">
+                <div class="main-nav__submenu-section">
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Electronics</a></h3>
+                  <h3 class="main-nav__submenu-title"><a class="main-nav__submenu-link" href="#">Home Accessories</a></h3>
+                </div>
+              </div>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Blogs</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="promo">
+      <h1 class="visually-hidden">Good shopping</h1>
+      <div class="container">
+        <div class="promo__list">
+          <div class="promo__item">
+            <div class="promo__swiper swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="banner">
+                    <div class="banner__inner">
+                      <a class="banner__img-link" href="#">
+                        <img class="banner__img" src="#" width="" height="" alt="">
+                      </a>
+                    </div>
+                    <div class="banner__content">
+                      <p class="banner__label">Limited Edition</p>
+                      <p class="banner__tagline">Summer Special</p>
+                      <h3 class="banner__title">Jackets</h3>
+                      <p class="banner__text">Lorem Ipsum is a simply dummy text of the printing and tyeseting industry</p>
+                      <a class="banner__button" href="#">Let's shop</a>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="banner">
+                    <div class="banner__inner">
+                      <a class="banner__img-link" href="#">
+                        <img class="banner__img" src="#" width="" height="" alt="">
+                      </a>
+                    </div>
+                    <div class="banner__content">
+                      <p class="banner__label">Limited Edition</p>
+                      <p class="banner__tagline">Speaker Special</p>
+                      <h3 class="banner__title">Wireless</h3>
+                      <p class="banner__text">Lorem Ipsum is a simply dummy text of the printing and tyeseting industry</p>
+                      <a class="banner__button" href="#">Let's shop</a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="promo__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="#" width="" height="" alt="">
+                </a>
+              </div>
+              <div class="banner__content">
+                <p class="banner__label banner__label--discount">-20%</p>
+                <p class="banner__tagline">Octa Core</p>
+                <h3 class="banner__title">Laptop</h3>
+              </div>
+            </article>
+          </div>
+          <div class="promo__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="#" width="" height="" alt="">
+                </a>
+              </div>
+              <div class="banner__content">
+                <h3 class="banner__title">Silver<strong>stone</strong></h3>
+                <p class="banner__text">New arrivals</p>
+              </div>
+            </article>
+          </div>
+          <div class="promo__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="#" width="" height="" alt="">
+                </a>
+              </div>
+              <div class="banner__content">
+                <p class="banner__label banner__label--discount">Hot</p>
+                <h3 class="banner__title">Handbags</h3>
+                <p class="banner__text">Extraordinary</p>
+              </div>
+            </article>
+          </div>
+          <div class="promo__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="#" width="" height="" alt="">
+                </a>
+              </div>
+              <div class="banner__content">
+                <p class="banner__label banner__label--discount">Colorful</p>
+                <h3 class="banner__title">Hot offer!!</h3>
+                <p class="banner__text">Ready Lighting</p>
+              </div>
+            </article>
+          </div>
+          <div class="promo__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="#" width="" height="" alt="">
+                </a>
+              </div>
+              <div class="banner__content">
+                <p class="banner__label banner__label--discount">Limited</p>
+                <h3 class="banner__title">Extraordinary</h3>
+                <p class="banner__text">Neckless</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <h2 class="main__title">Our products</h2>
+      <div class="products__card">
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item">
+              <span class="tabs__text">Latest</span>
+            </li>
+            <li class="tabs__item">
+              <span class="tabs__text">Bestseller</span>
+            </li>
+            <li class="tabs__item">
+              <span class="tabs__text">Special</span>
+            </li>
+          </ul>
+        </div>
+        <div class="products__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Foramationdi Venkash</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$122</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price"><del>$241.99</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Varius Neque At Enim</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$122</span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Suspendisse Massa Nulla</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$62.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price"><del>$122.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Bhumitationa Centyraon</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$842.00</span>
+                  <span class="card__discount">30%</span>
+                  <span class="card__old-price"><del>$1,202.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Mauris Blandit Vehicula</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$1,000.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price"><del>$2,000.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Aminatiom Descentation</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$1,082.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price"><del>$1,202.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Tarundecf Beseking</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$482.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price"><del>$602.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Curabitur Dolor Nunc</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$110.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price"><del>$122.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Suspendisse Potenti</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$122.00</span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <img class="card__img" src="#" width="" height="" alt="">
+                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                </div>
+                <h3 class="card__title">Tellus Eu Volutpat Varius</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$122.00</span>
+                  <span class="card__discount">1%</span>
+                  <span class="card__old-price"><del>$123.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+      <div class="products__banner">
+        <div class="products__item">
+          <article class="banner">
+            <div class="banner__inner">
+              <a class="banner__img-link" href="#">
+                <img class="banner__img" src="#" width="" height="" alt="">
+              </a>
+            </div>
+            <div class="banner__content">
+              <p class="banner__label banner__label--discount">40% Off</p>
+              <p class="banner__tagline">Explore our range</p>
+              <h3 class="banner__title">Fashion Lab</h3>
+            </div>
+          </article>
+        </div>
+        <div class="products__item">
+          <article class="banner">
+            <div class="banner__inner">
+              <a class="banner__img-link" href="#">
+                <img class="banner__img" src="#" width="" height="" alt="">
+              </a>
+            </div>
+            <div class="banner__content">
+              <p class="banner__label banner__label--discount">50% Off</p>
+              <p class="banner__tagline">Stylish Designs</p>
+              <h3 class="banner__title">Elect Dron</h3>
+            </div>
+          </article>
+        </div>
+        <div class="products__item">
+          <article class="banner">
+            <div class="banner__inner">
+              <a class="banner__img-link" href="#">
+                <img class="banner__img" src="#" width="" height="" alt="">
+              </a>
+            </div>
+            <div class="banner__content">
+              <p class="banner__label banner__label--discount">Limited Edition</p>
+              <p class="banner__tagline">Lorem Ipsum is simply dummy text of the printing and tyeseting industry. </p>
+              <h3 class="banner__title">Summer Special Off</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="specials">
+      <h2 class="visually-hidden">Special offers</h2>
+      <div class="specials__swiper swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Aminatiom Descentation</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$1,082.00</span>
+                <span class="card__discount">10%</span>
+                <span class="card__old-price"><del>$1, 202.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Bhumitationa Centyraon</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$842.00</span>
+                <span class="card__discount">30%</span>
+                <span class="card__old-price"><del>$1,202.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Cum Sociis Natoque</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$98.00</span>
+                <span class="card__discount">20%</span>
+                <span class="card__old-price"><del>$122.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Curabitur Dolor Nunc</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$110.00</span>
+                <span class="card__discount">10%</span>
+                <span class="card__old-price"><del>$122.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Foramationdi Venkash</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$122</span>
+                <span class="card__discount">50%</span>
+                <span class="card__old-price"><del>$241.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Mauris Blandit Vehicula</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$1,000.00</span>
+                <span class="card__discount">50%</span>
+                <span class="card__old-price"><del>$2,000.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Meghpolo Nepturis</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$242.00</span>
+                <span class="card__discount">29%</span>
+                <span class="card__old-price"><del>$337.99</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Suspendisse Massa Nulla</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$62.00</span>
+                <span class="card__discount">50%</span>
+                <span class="card__old-price"><del>$122.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Tarundecf Beseking</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$482.00</span>
+                <span class="card__discount">20%</span>
+                <span class="card__old-price"><del>$602.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card card--product">
+              <div class="card__inner">
+                <img class="card__img" src="#" width="" height="" alt="">
+                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="card__title">Tellus Eu Volutpat Varius</h3>
+              <fieldset class="rating">
+                <legend class="visually-hidden">Рейтинг товара</legend>
+                <div class="rating__group">
+                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                  <div class="rating__focus"></div>
+                </div>
+              </fieldset>
+              <div class="card__price">
+                <span class="card__price">$122.00</span>
+                <span class="card__discount">1%</span>
+                <span class="card__old-price"><del>$123.00</del></span>
+              </div>
+              <button class="card__button">Add to cart</button>
+            </article>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="brands">
+        <div class="brands__list">
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+          <div class="brands__item">
+            <img class="brands__img" src="#" width="" height="" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <h2 class="main__title">Latest Blog</h2>
+      <div class="blog__list">
+        <div class="blog__item">
+          <article class="blog__card">
+            <div class="blog__inner">
+              <img class="blog__img" src="#" width="" height="" alt="">
+              <button class="blog__button" type="button" title="Click to view full image"></button>
+              <a class="blog__link" href="#" title="Click to read more"></a>
+            </div>
+            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+            <h3 class="blog__title">ligula quam Vestibulum consequat convallis</h3>
+          </article>
+        </div>
+
+
+        <div class="blog__item">
+          <article class="blog__card">
+            <div class="blog__inner">
+              <img class="blog__img" src="#" width="" height="" alt="">
+              <button class="blog__button" type="button" title="Click to view full image"></button>
+              <a class="blog__link" href="#" title="Click to read more"></a>
+            </div>
+            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+            <h3 class="blog__title">Laoreet Vestibulum lacinia massa a commodo habitasse velit</h3>
+          </article>
+        </div>
+        <div class="blog__item">
+          <article class="blog__card">
+            <div class="blog__inner">
+              <img class="blog__img" src="#" width="" height="" alt="">
+              <button class="blog__button" type="button" title="Click to view full image"></button>
+              <a class="blog__link" href="#" title="Click to read more"></a>
+            </div>
+            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+            <h3 class="blog__title">Nullam ullamcorper nisl quis ornare molestie</h3>
+          </article>
+        </div>
+        <div class="blog__item">
+          <article class="blog__card">
+            <div class="blog__inner">
+              <img class="blog__img" src="#" width="" height="" alt="">
+              <button class="blog__button" type="button" title="Click to view full image"></button>
+              <a class="blog__link" href="#" title="Click to read more"></a>
+            </div>
+            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+            <h3 class="blog__title">Turpis at eleifend ps mi elit Aenean porta ac sed faucibus</h3>
+          </article>
+        </div>
+        <div class="blog__item">
+          <article class="blog__card">
+            <div class="blog__inner">
+              <img class="blog__img" src="#" width="" height="" alt="">
+              <button class="blog__button" type="button" title="Click to view full image"></button>
+              <a class="blog__link" href="#" title="Click to read more"></a>
+            </div>
+            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+            <h3 class="blog__title"> Morbi condimentum molestie Nam enim odio sodales</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Our advantages</h2>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <article class="advantages__card">
+            <div class="advantages__inner">
+              <img class="advantages__img" src="#" width="" height="" alt="">
+            </div>
+            <h3 class="advantages__title">Free world delivery</h3>
+            <p class="advantages__description">Orders over 100$</p>
+          </article>
+        </li>
+        <li class="advantages__item">
+          <article class="advantages__card">
+            <div class="advantages__inner">
+              <img class="advantages__img" src="#" width="" height="" alt="">
+            </div>
+            <h3 class="advantages__title">Money back guarantee</h3>
+            <p class="advantages__description">With a 30 days</p>
+          </article>
+        </li>
+        <li class="advantages__item">
+          <article class="advantages__card">
+            <div class="advantages__inner">
+              <img class="advantages__img" src="#" width="" height="" alt="">
+            </div>
+            <h3 class="advantages__title">Best online support</h3>
+            <p class="advantages__description">Hours: 8<span class="advantages__time">am</span> - 11<span class="advantages__time">pm</span></p>
+          </article>
+        </li>
+        <li class="advantages__item">
+          <article class="advantages__card">
+            <div class="advantages__inner">
+              <img class="advantages__img" src="#" width="" height="" alt="">
+            </div>
+            <h3 class="advantages__title">East and free returns</h3>
+            <p class="advantages__description">Hours: 8<span class="advantages__time">am</span> - 11<span class="advantages__time">pm</span></p>
+          </article>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="contacts">
+        <div class="footer__inner">
+          <h3 class="footer__subtitle">Store information</h3>
+          <button class="footer__control" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+        </div>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <div class="contacts__inner">
+              <img class="contacts__icon" src="#" width="" height="" alt="">
+              <address class="contacts__text">705-Infinity Centre, Beside trafy building, United State</address>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__inner">
+              <img class="contacts__img" src="#" width="" height="" alt="">
+              <a class="contacts__phone" href="tel:0123456789">0123-456-789</a>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__inner">
+              <img class="contacts__img" src="#" width="" height="" alt="">
+              <a class="contacts__mail" href="mailto:support@yourstore.com">Support@Yourstore.Com</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <h3 class="footer__subtitle">Information</h3>
+            <button class="footer__control" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">About us</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Delivery Information</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Privacy Policy</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Terms & Conditions</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__wrapper">
+          <div class="footer__inner">
+            <h3 class="footer__subtitle">My Account</h3>
+            <button class="footer__control" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+          </div>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">My account</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Specials</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Contact us</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Site map</a>
+              </div>
+            </li>
+            <li class="footer__item">
+              <div class="footer__inner">
+                <img class="footer__img" src="#" width="" height="" alt="">
+                <a class="footer__link" href="#">Brands</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="form">
+          <div class="footer__inner">
+            <h3 class="footer__subtitle">Sign up for newsletter</h3>
+            <button class="footer__control" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+          </div>
+          <form class="form__search" method="post" action="#">
+            <label class="visually-hidden" for="searchfield">Search field</label>
+            <input class="form__input" type="search" name="search" value="" id="searchfield" placeholder="E-mail">
+            <button class="form__button form__button--subscribe" type="button">
+              <span class="">Subscribe</span>
+            </button>
+          </form>
+        </div>
+        <div class="social">
+          <div class="footer__inner">
+            <h3 class="footer__subtitle">Social Media</h3>
+            <button class="footer__control" type="button"><span class="visually-hidden">Открыть/закрыть меню</span></button>
+          </div>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Facebook</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Google</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Pinterest</span>
+                <svg></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Instagram</span>
+                <svg></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button class="button button__top" type="button">
+      <span class="visually-hidden">Перейти в начало страницы</span>
+    </button>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

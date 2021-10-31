@@ -1,0 +1,36 @@
+.form {
+  flex-grow: 1;
+  order: 2;
+  .offset(0; 0);
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    max-width: 481px;
+    margin-right: 120px;
+  }
+}
+
+.form__search {
+  display: flex;
+  width: 100%;
+}
+
+.form__input {
+  flex-grow: 1;
+  .offset(0; 9px 16px);
+  border: 2px solid @purple;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  transition: 0.3s ease;
+
+  &::placeholder {
+    .typography(12px; 1.33);
+    letter-spacing: 0.7px;
+    color: @grey2;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}

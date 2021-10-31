@@ -1,0 +1,202 @@
+.header {
+  .offset(0; 0);
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.header__container {
+  padding-top: 12px;
+}
+
+.header__top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: -30px;
+    width: 130%;
+    height: 1px;
+    background-color: @grey1;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.header__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  .offset(0 15px 0 auto; 0);
+
+  @media (min-width: @tablet-width) {
+    column-gap: 30px;
+  }
+}
+
+.header__link {
+  display: flex;
+  font-family: "Poppins", "Arial", sans-serif;
+  .typography(12px; 18px);
+  letter-spacing: 0.5px;
+  color: @grey;
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: @purple;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__link-text {
+  .offset(0; 0);
+  position: relative;
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+  }
+}
+
+.header__link-text--favorites {
+  margin-right: 5px;
+  padding-left: 20px;
+
+  &::before {
+    width: 12px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='12px' height='10px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 18.59 15.92' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23939393%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath class='fil0' d='M8.97 15.84c0.22,0.11 0.44,0.11 0.65,-0.01l-0.65 0.01zm0 0c-4.84,-4.39 -7.47,-7.04 -7.89,-7.96 -0.92,-1.25 -1.25,-2.71 -1,-4.37 0.74,-2.61 2.58,-3.76 5.52,-3.46 0.89,0.05 2.1,0.77 3.64,2.15l0.11 0c1.53,-1.38 2.75,-2.1 3.64,-2.15 2.94,-0.3 4.77,0.85 5.51,3.46 0.26,1.66 -0.07,3.12 -0.99,4.37 -0.42,0.92 -3.05,3.57 -7.89,7.96l-0.65 0z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='12px' height='10px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 18.59 15.92' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%239174ce%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath class='fil0' d='M8.97 15.84c0.22,0.11 0.44,0.11 0.65,-0.01l-0.65 0.01zm0 0c-4.84,-4.39 -7.47,-7.04 -7.89,-7.96 -0.92,-1.25 -1.25,-2.71 -1,-4.37 0.74,-2.61 2.58,-3.76 5.52,-3.46 0.89,0.05 2.1,0.77 3.64,2.15l0.11 0c1.53,-1.38 2.75,-2.1 3.64,-2.15 2.94,-0.3 4.77,0.85 5.51,3.46 0.26,1.66 -0.07,3.12 -0.99,4.37 -0.42,0.92 -3.05,3.57 -7.89,7.96l-0.65 0z'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.header__link-text--checkout {
+  padding-left: 20px;
+
+  &::before {
+    width: 12px;
+    height: 11px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='12px' height='11px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 8.27 7.41' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%23939393%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath class='fil0' d='M5.34 0.21c0,0.86 0,1.29 -0.01,1.29 -2.17,-0.05 -3.61,0.22 -4.31,0.81 -0.57,0.44 -0.9,1.04 -0.99,1.83 -0.1,0.79 0.04,1.65 0.41,2.57 0.15,0.36 0.26,0.58 0.33,0.65 0.1,0.08 0.16,0.07 0.2,-0.02 -0.05,-0.87 -0.03,-1.45 0.07,-1.73 0.24,-0.99 0.96,-1.56 2.15,-1.7 0.95,-0.08 1.64,-0.1 2.09,-0.05 0.01,0.3 0.03,0.72 0.04,1.26 0.06,0.26 0.2,0.33 0.43,0.2 1.64,-1.64 2.45,-2.46 2.45,-2.46 0.1,-0.14 0.1,-0.26 0.01,-0.36 -1.68,-1.63 -2.5,-2.45 -2.47,-2.47 -0.23,-0.07 -0.36,-0.02 -0.4,0.18z'/%3E%3C/g%3E%3C/svg%3E%0A");
+  }
+
+  &:hover {
+    &::before {
+      background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3C!-- Creator: CorelDRAW 2020 (64-Bit) --%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='12px' height='11px' version='1.1' style='shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd'%0AviewBox='0 0 8.27 7.41' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:xodm='http://www.corel.com/coreldraw/odm/2003'%3E%3Cdefs%3E%3Cstyle type='text/css'%3E%3C!%5BCDATA%5B .fil0 %7Bfill:%239174ce%7D %5D%5D%3E%3C/style%3E%3C/defs%3E%3Cg id='Слой_x0020_1'%3E%3Cmetadata id='CorelCorpID_0Corel-Layer'/%3E%3Cpath class='fil0' d='M5.34 0.21c0,0.86 0,1.29 -0.01,1.29 -2.17,-0.05 -3.61,0.22 -4.31,0.81 -0.57,0.44 -0.9,1.04 -0.99,1.83 -0.1,0.79 0.04,1.65 0.41,2.57 0.15,0.36 0.26,0.58 0.33,0.65 0.1,0.08 0.16,0.07 0.2,-0.02 -0.05,-0.87 -0.03,-1.45 0.07,-1.73 0.24,-0.99 0.96,-1.56 2.15,-1.7 0.95,-0.08 1.64,-0.1 2.09,-0.05 0.01,0.3 0.03,0.72 0.04,1.26 0.06,0.26 0.2,0.33 0.43,0.2 1.64,-1.64 2.45,-2.46 2.45,-2.46 0.1,-0.14 0.1,-0.26 0.01,-0.36 -1.68,-1.63 -2.5,-2.45 -2.47,-2.47 -0.23,-0.07 -0.36,-0.02 -0.4,0.18z'/%3E%3C/g%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.header__main {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 25px;
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.header__menu {
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    max-width: 242px;
+    margin-bottom: 0;
+  }
+}
+
+.header__menu-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: @black;
+
+  &:hover,
+  &:focus {
+    color: @purple;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.header__menu-text {
+  display: block;
+  .typography(14px; 18px);
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.header__menu-text--account {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.header__menu-text--cart {
+  text-transform: uppercase;
+}
+
+.header__menu-icon {
+  cursor: pointer;
+}
+
+.header__menu-icon--stroke {
+  stroke: @black;
+  stroke-width: 0.04px;
+}
+
+.header__menu-link:hover .header__menu-icon--stroke,
+.header__menu-link:hover .header__menu-icon--stroke-cart {
+  transition: 0.3s ease;
+  stroke: @purple;
+}
+
+.header__menu-icon--fill {
+  fill: none;
+}
+
+.header__menu-icon--stroke-cart {
+  stroke: @black;
+  stroke-width: 0.09px;
+}
+
+.fil0 {
+  fill: none;
+}

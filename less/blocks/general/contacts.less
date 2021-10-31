@@ -1,0 +1,31 @@
+.contacts {
+  .offset(0; 0);
+}
+
+.contacts--header {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.contacts__text {
+  font-family: "Poppins", "Arial", sans-serif;
+  .typography(12px; 20px);
+  letter-spacing: 1px;
+  color: @grey;
+}
+
+.contacts__phone-link {
+  transition: 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: @purple;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

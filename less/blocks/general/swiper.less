@@ -1,0 +1,60 @@
+.promo__swiper .swiper-button-prev,
+.promo__swiper .swiper-button-next {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px 0 0 15px;
+    background-color: @purple;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    visibility: hidden;
+
+    &::after {
+      font-size: 20px;
+      color: @white;
+    }
+  }
+}
+
+.promo__swiper .swiper-button-prev {
+  @media (min-width: @tablet-width) {
+    transform: translateX(-50px);
+  }
+}
+
+.promo__swiper .swiper-button-next {
+  @media (min-width: @tablet-width) {
+    transform: translateX(50px);
+  }
+}
+
+.promo__item--first:hover .swiper-button-prev,
+.promo__item--first:hover .swiper-button-next {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.products__swiper .swiper-button-prev,
+.products__swiper .swiper-button-next {
+  display: none;
+  transition: 0.5s ease;
+}
+
+.promo__swiper .swiper-pagination-bullets.swiper-pagination-bullets {
+  bottom: 10px;
+}
+
+.promo__swiper .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background-color: @white;
+  border: 1px solid @purple;
+  opacity: 1;
+}
+
+.promo__swiper .swiper-pagination-bullet-active {
+  background-color: @purple;
+}

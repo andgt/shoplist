@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>Shoplist</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper-bundle.css">
 </head>
 <body class="page__body">
   <header class="header">
@@ -178,37 +179,41 @@
       <h1 class="visually-hidden">Good shopping</h1>
       <div class="container">
         <div class="promo__list">
-          <div class="promo__item">
+          <div class="promo__item promo__item--first">
             <div class="promo__swiper swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <article class="banner">
+                  <article class="banner banner--main-slide">
                     <div class="banner__inner">
                       <a class="banner__img-link" href="#">
-                        <img class="banner__img" src="#" width="" height="" alt="">
+                        <img class="banner__img" src="img/desktop/banner-wireless.jpg" width="793" height="440" alt="Wireless">
                       </a>
                     </div>
-                    <div class="banner__content">
-                      <p class="banner__label">Limited Edition</p>
-                      <p class="banner__tagline">Summer Special</p>
-                      <h3 class="banner__title">Jackets</h3>
-                      <p class="banner__text">Lorem Ipsum is a simply dummy text of the printing and tyeseting industry</p>
+                    <div class="banner__content banner__content--main-slider">
+                      <p class="banner__label banner__label--main-slide">Limited Edition</p>
+                      <div class="banner__main-text">
+                        <p class="banner__tagline banner__tagline--main-slide">Speaker Special</p>
+                        <h3 class="banner__title banner__title--main-slide">Wireless</h3>
+                      </div>
+                      <p class="banner__text banner__text--main-slide">Lorem Ipsum is a simply dummy text of the printing and tyeseting industry</p>
                       <a class="banner__button" href="#">Let's shop</a>
                     </div>
                   </article>
                 </div>
                 <div class="swiper-slide">
-                  <article class="banner">
+                  <article class="banner banner--main-slide">
                     <div class="banner__inner">
                       <a class="banner__img-link" href="#">
-                        <img class="banner__img" src="#" width="" height="" alt="">
+                        <img class="banner__img" src="img/desktop/banner-jackets.jpg" width="793" height="440" alt="Jackets">
                       </a>
                     </div>
-                    <div class="banner__content">
+                    <div class="banner__content banner__content--main-slider">
                       <p class="banner__label">Limited Edition</p>
-                      <p class="banner__tagline">Speaker Special</p>
-                      <h3 class="banner__title">Wireless</h3>
-                      <p class="banner__text">Lorem Ipsum is a simply dummy text of the printing and tyeseting industry</p>
+                      <div class="banner__main-text">
+                        <p class="banner__tagline banner__tagline--main-slide">Summer Special</p>
+                        <h3 class="banner__title banner__title--main-slide">Jackets</h3>
+                      </div>
+                      <p class="banner__text banner__text--main-slide">Lorem Ipsum is a simply dummy text of the printing and tyeseting industry</p>
                       <a class="banner__button" href="#">Let's shop</a>
                     </div>
                   </article>
@@ -219,72 +224,76 @@
               <div class="swiper-button-next"></div>
             </div>
           </div>
-          <div class="promo__item">
+          <div class="promo__item promo__item--second">
+            <div class="promo__inner">
+              <article class="banner">
+                <div class="banner__inner">
+                  <a class="banner__img-link" href="#">
+                    <img class="banner__img" src="img/desktop/banner-laptop.jpg" width="387" height="210" alt="Laptop">
+                  </a>
+                </div>
+                <div class="banner__content banner__content--discount">
+                  <p class="banner__label banner__label--discount">-20%</p>
+                  <div class="banner__main-text">
+                    <p class="banner__tagline">Octa Core</p>
+                    <h3 class="banner__title">Laptop</h3>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="promo__inner">
+              <article class="banner">
+                <div class="banner__inner">
+                  <a class="banner__img-link" href="#">
+                    <img class="banner__img" src="img/desktop/banner-silverstone.jpg" width="387" height="210" alt="Silverstone">
+                  </a>
+                </div>
+                <div class="banner__content banner__content--arrivals">
+                  <h3 class="banner__title banner__title--arrivals"><span class="banner__title-color">Silver</span>stone</h3>
+                  <p class="banner__text banner__text--arrivals">New arrivals</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="promo__item promo__item--rest">
             <article class="banner">
               <div class="banner__inner">
                 <a class="banner__img-link" href="#">
-                  <img class="banner__img" src="#" width="" height="" alt="">
+                  <img class="banner__img" src="img/desktop/banner-handbags.jpg" width="387" height="150" alt="Handbags">
                 </a>
               </div>
-              <div class="banner__content">
-                <p class="banner__label banner__label--discount">-20%</p>
-                <p class="banner__tagline">Octa Core</p>
-                <h3 class="banner__title">Laptop</h3>
+              <div class="banner__content banner__content--secondary">
+                <p class="banner__label banner__label--secondary banner__label--hot">Hot</p>
+                <h3 class="banner__title banner__title--secondary">Handbags</h3>
+                <p class="banner__text banner__text--secondary">Extraordinary</p>
               </div>
             </article>
           </div>
-          <div class="promo__item">
+          <div class="promo__item promo__item--rest">
             <article class="banner">
               <div class="banner__inner">
                 <a class="banner__img-link" href="#">
-                  <img class="banner__img" src="#" width="" height="" alt="">
+                  <img class="banner__img" src="img/desktop/banner-hot-offer.jpg" width="387" height="150" alt="Hot-Offer">
                 </a>
               </div>
-              <div class="banner__content">
-                <h3 class="banner__title">Silver<strong>stone</strong></h3>
-                <p class="banner__text">New arrivals</p>
+              <div class="banner__content banner__content--secondary">
+                <p class="banner__label banner__label--secondary">Colorful</p>
+                <h3 class="banner__title banner__title--secondary">Hot offer!!</h3>
+                <p class="banner__text banner__text--secondary">Ready Lighting</p>
               </div>
             </article>
           </div>
-          <div class="promo__item">
+          <div class="promo__item promo__item--rest">
             <article class="banner">
               <div class="banner__inner">
                 <a class="banner__img-link" href="#">
-                  <img class="banner__img" src="#" width="" height="" alt="">
+                  <img class="banner__img" src="img/desktop/banner-neckless.jpg" width="387" height="150" alt="Neckless">
                 </a>
               </div>
-              <div class="banner__content">
-                <p class="banner__label banner__label--discount">Hot</p>
-                <h3 class="banner__title">Handbags</h3>
-                <p class="banner__text">Extraordinary</p>
-              </div>
-            </article>
-          </div>
-          <div class="promo__item">
-            <article class="banner">
-              <div class="banner__inner">
-                <a class="banner__img-link" href="#">
-                  <img class="banner__img" src="#" width="" height="" alt="">
-                </a>
-              </div>
-              <div class="banner__content">
-                <p class="banner__label banner__label--discount">Colorful</p>
-                <h3 class="banner__title">Hot offer!!</h3>
-                <p class="banner__text">Ready Lighting</p>
-              </div>
-            </article>
-          </div>
-          <div class="promo__item">
-            <article class="banner">
-              <div class="banner__inner">
-                <a class="banner__img-link" href="#">
-                  <img class="banner__img" src="#" width="" height="" alt="">
-                </a>
-              </div>
-              <div class="banner__content">
-                <p class="banner__label banner__label--discount">Limited</p>
-                <h3 class="banner__title">Extraordinary</h3>
-                <p class="banner__text">Neckless</p>
+              <div class="banner__content banner__content--secondary">
+                <p class="banner__label banner__label--secondary banner__label--limited">Limited</p>
+                <h3 class="banner__title banner__title--secondary banner__title--extraordinary">Extraordinary</h3>
+                <p class="banner__text banner__text--secondary banner__text--limited">Neckless</p>
               </div>
             </article>
           </div>
@@ -1281,5 +1290,7 @@
     </button>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 </html>

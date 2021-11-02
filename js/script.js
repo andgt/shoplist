@@ -66,3 +66,36 @@ let submenuInner = function() {
 };
 
 submenuInner();
+
+// Табы
+let tab = function() {
+  let tabBtn = document.querySelectorAll(".button__tab");
+  let descriptionBlock = document.querySelectorAll(".products__swiper");
+  let tabName;
+
+  tabBtn.forEach(element => {
+    element.addEventListener("click", selectTab)
+  });
+
+  function selectTab(evt) {
+    evt.preventDefault();
+    tabBtn.forEach(element => {
+      element.classList.remove("products__swiper--show");
+    });
+    this.classList.add("products__swiper--show");
+    tabName = this.getAttribute("data-tab");
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(tabName) {
+    descriptionBlock.forEach(element => {
+      if (element.classList.contains(tabName)) {
+        element.classList.add("products__swiper--show");
+      } else {
+        element.classList.remove("products__swiper--show");
+      }
+    });
+  };
+};
+
+tab();

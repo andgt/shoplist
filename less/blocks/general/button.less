@@ -2,6 +2,7 @@
   display: block;
   max-width: 103px;
   .offset(0; 0);
+  font-family: "Poppins", "Arial", sans-serif;
   background-color: @purple;
   border: 0;
   border-radius: 5px;
@@ -21,5 +22,25 @@
   &:hover,
   &:focus {
     opacity: 0.9;
+  }
+}
+
+.button__tab {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 6px 17px;
+  .typography(13px; 1.4);
+  font-weight: 600;
+  background-color: transparent;
+  transition: 0.3s ease;
+  letter-spacing: 1px;
+
+  &:hover,
+  &:focus {
+    color: @purple;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }

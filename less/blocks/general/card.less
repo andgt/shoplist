@@ -1,6 +1,10 @@
 .card--product {
   max-width: 324px;
   .offset(0 auto; 0);
+
+  @media (min-width: @desktop-width) {
+    min-height: 418px;
+  }
 }
 
 .card__inner {
@@ -147,5 +151,17 @@
 
   &:active {
     opacity: 0.7;
+  }
+
+  @media (min-width: @desktop-width) {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.card--product:hover .card__button {
+  @media (min-width: @desktop-width) {
+    visibility: visible;
+    opacity: 1;
   }
 }

@@ -44,3 +44,28 @@ let productsSwiper = function() {
 };
 
 productsSwiper();
+
+let specialsSwiper = function() {
+  const swiperProduct = new Swiper(".specials__swiper", {
+    slidesPerView: 1,
+    speed: 800,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+      680: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1260: {
+        slidesPerView: 5,
+      },
+    }
+  });
+};
+
+specialsSwiper();

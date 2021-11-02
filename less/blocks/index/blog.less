@@ -1,0 +1,120 @@
+.blog__list {
+  align-items: stretch;
+}
+
+.blog__slide.swiper-slide {
+  height: auto;
+}
+
+.blog__item {
+  height: 100%;
+  .offset(0; 15px);
+  border: 1px solid @grey1;
+}
+
+.blog__inner {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.blog__img-link {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  min-height: 190px;
+  max-height: 190px;
+  transition: 0.5s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: @black;
+    opacity: 0.5;
+  }
+}
+
+.blog__inner:hover .blog__img-link::before {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+.blog__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog__control-wrapper {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90px;
+  margin: auto;
+  z-index: 10;
+}
+
+.blog__control {
+  visibility: hidden;
+  flex-shrink: 0;
+  width: 40px;
+  height: 44px;
+  background-color: @purple;
+  border: 2px solid @white;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  transition: 0.5s ease;
+
+  &:hover {
+    background-color: @black;
+  }
+}
+
+.blog__inner:hover .blog__control,
+.blog__control:hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.blog__link {
+  background-image: url("../img/icon/blog-link.svg");
+}
+
+.blog__button {
+  background-image: url("../img/icon/blog-magnifier.svg");
+}
+
+.blog__date {
+  display: block;
+  .offset(0 0 10px 0; 0);
+  .typography(13px; 23px);
+  font-weight: 500;
+  color: @purple;
+  letter-spacing: 0.5px;
+}
+
+.blog__title {
+  .offset(0; 0);
+}
+
+.blog__title-link {
+  font-family: "Poppins", "Arial", sans-serif;
+  .typography(12px; 22px);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: @black3;
+}

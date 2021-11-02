@@ -1757,6 +1757,7 @@ a {
 .brands__item {
   display: flex;
   justify-content: center;
+  min-height: 100px;
   margin: 0 15px;
 }
 .brands__img {
@@ -1772,6 +1773,116 @@ a {
 }
 .brands__item:hover .brands__img {
   opacity: 1;
+}
+.blog__list {
+  align-items: stretch;
+}
+.blog__slide.swiper-slide {
+  height: auto;
+}
+.blog__item {
+  height: 100%;
+  margin: 0;
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+}
+.blog__inner {
+  display: grid;
+  margin-bottom: 20px;
+}
+.blog__img-link {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  min-height: 190px;
+  max-height: 190px;
+  transition: 0.5s ease;
+}
+.blog__img-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.5;
+}
+.blog__inner:hover .blog__img-link::before {
+  visibility: visible;
+  opacity: 0.5;
+}
+.blog__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog__control-wrapper {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 90px;
+  margin: auto;
+  z-index: 10;
+}
+.blog__control {
+  visibility: hidden;
+  flex-shrink: 0;
+  width: 40px;
+  height: 44px;
+  background-color: #9174ce;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.blog__control:hover {
+  background-color: #000000;
+}
+.blog__inner:hover .blog__control,
+.blog__control:hover {
+  visibility: visible;
+  opacity: 1;
+}
+.blog__link {
+  background-image: url("../img/icon/blog-link.svg");
+}
+.blog__button {
+  background-image: url("../img/icon/blog-magnifier.svg");
+}
+.blog__date {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #9174ce;
+  letter-spacing: 0.5px;
+}
+.blog__title {
+  margin: 0;
+  padding: 0;
+}
+.blog__title-link {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #131414;
 }
 
 /*# sourceMappingURL=style.css.map */

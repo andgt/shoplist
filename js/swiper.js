@@ -73,7 +73,7 @@ specialsSwiper();
 let brandsSwiper = function() {
   const swiperBrands = new Swiper(".brands__swiper", {
     slidesPerView: 1,
-    speed: 300,
+    speed: 500,
     spaceBetween: 15,
     loop: true,
     navigation: {
@@ -95,3 +95,24 @@ let brandsSwiper = function() {
 };
 
 brandsSwiper();
+
+let blogSwiper = function() {
+  const swiperBlog = new Swiper(".blog__swiper", {
+    slidesPerView: 1,
+    speed: 500,
+    spaceBetween: 15,
+    breakpoints: {
+      500: {
+        slidesPerView: 2,
+      },
+      900: {
+        slidesPerView: 3,
+      },
+      1260: {
+        slidesPerView: 4,
+      },
+    },
+  });
+};
+
+blogSwiper();

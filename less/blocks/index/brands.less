@@ -1,0 +1,33 @@
+.brands {
+  .offset(0 0 40px 0; 50px 30px);
+  background-color: @grey7;
+}
+
+.brands__item {
+  max-width: 244px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 178px;
+    margin: 0 15px;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 160px;
+    margin: 0 15px;
+  }
+}
+
+.brands__img {
+  display: block;
+  max-width: 130px;
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transition: 0.3s ease;
+}
+
+.brands__item:hover .brands__img {
+  opacity: 1;
+}

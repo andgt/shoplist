@@ -72,15 +72,16 @@ specialsSwiper();
 
 let brandsSwiper = function() {
   const swiperBrands = new Swiper(".brands__swiper", {
-    slidesPerView: "auto",
-    speed: 800,
-    spaceBetween: 10,
+    slidesPerView: 1,
+    speed: 300,
+    spaceBetween: 15,
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
     },
     breakpoints: {
-      680: {
+      560: {
         slidesPerView: 2,
       },
       768: {

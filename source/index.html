@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Shoplist</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper-bundle.css">
@@ -301,30 +301,1367 @@
       </div>
     </section>
     <section class="products">
-      <h2 class="main__title">Our products</h2>
-      <div class="products__card">
-        <div class="tabs">
-          <ul class="tabs__list">
-            <li class="tabs__item">
-              <span class="tabs__text">Latest</span>
-            </li>
-            <li class="tabs__item">
-              <span class="tabs__text">Bestseller</span>
-            </li>
-            <li class="tabs__item">
-              <span class="tabs__text">Special</span>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="products__card">
+          <div class="products__header">
+            <h2 class="main__title main__title--products">Our products</h2>
+            <div class="tabs">
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <button class="button button__tab" type="button" data-tab="tab-1">Latest</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="button button__tab" type="button" data-tab="tab-2">Bestseller</button>
+                </li>
+                <li class="tabs__item">
+                  <button class="button button__tab" type="button" data-tab="tab-3">Special</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="products__swiper products__swiper--show tab-1 swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-1-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="products__swiper swiper tab-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-4.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-4-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="products__swiper swiper tab-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card card--product">
+                  <div class="card__inner">
+                    <div class="card__img-wrapper">
+                      <a class="card__view" href="#" aria-label="card-view"></a>
+                      <a class="card__img-link card__img-link--first" href="#">
+                        <img class="card__img" src="img/desktop/products-5.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                      <a class="card__img-link card__img-link--additional" href="#">
+                        <img class="card__img card__img--additional" src="img/desktop/products-5-1.jpg" width="222" height="278" alt="Product Card">
+                      </a>
+                    </div>
+                  </div>
+                  <h3 class="card__title">
+                    <a class="card__title-link" href="#">
+                      Foramationdi Venkash
+                    </a>
+                  </h3>
+                  <fieldset class="rating">
+                    <legend class="visually-hidden">Product rating</legend>
+                    <div class="rating__group">
+                      <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                      <label class="rating__star" for="card-1" aria-label="bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                      <label class="rating__star" for="card-2" aria-label="not bad"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                      <label class="rating__star" for="card-3" aria-label="normal"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                      <label class="rating__star" for="card-4" aria-label="good"></label>
+                      <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                      <label class="rating__star" for="card-5" aria-label="very good"></label>
+                      <div class="rating__focus"></div>
+                    </div>
+                  </fieldset>
+                  <div class="card__info">
+                    <span class="card__price">$122</span>
+                    <span class="card__discount">50%</span>
+                    <span class="card__old-price"><del>$241.99</del></span>
+                  </div>
+                  <button class="card__button button" type="button">Add to cart</button>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
-        <div class="products__swiper swiper">
+        <div class="products__banner">
+          <div class="products__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="img/desktop/products-banner-1.jpg" width="590" height="253" alt="Producst banner">
+                </a>
+              </div>
+              <div class="banner__content banner__content--products">
+                <p class="banner__label banner__label--products">40% Off</p>
+                <p class="banner__tagline banner__tagline--products">Explore our range</p>
+                <h3 class="banner__title banner__title--products">Fashion Lab</h3>
+              </div>
+            </article>
+          </div>
+          <div class="products__item">
+            <article class="banner">
+              <div class="banner__inner">
+                <a class="banner__img-link" href="#">
+                  <img class="banner__img" src="img/desktop/products-banner-2.jpg" width="590" height="253" alt="Producst banner">
+                </a>
+              </div>
+              <div class="banner__content banner__content--products">
+                <p class="banner__label banner__label--products">50% Off</p>
+                <p class="banner__tagline banner__tagline--products">Stylish Designs</p>
+                <h3 class="banner__title banner__title--products">Elect Dron</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="products__promo">
+          <article class="banner">
+            <div class="banner__inner">
+              <a class="banner__img-link" href="#">
+                <img class="banner__img banner__img--products" src="img/desktop/products-banner-3.jpg" width="1200" height="253" alt="Producst banner">
+              </a>
+            </div>
+            <div class="banner__content banner__content--products banner__content--products-last">
+              <p class="banner__label banner__label--products banner__label--products-last">Limited Edition</p>
+              <p class="banner__tagline banner__tagline--products banner__tagline--products-last">Lorem Ipsum is simply dummy text of the printing and tyeseting industry. </p>
+              <h3 class="banner__title banner__title--products banner__title--products-last">Summer Special Off</h3>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="specials">
+      <h2 class="visually-hidden">Special offers</h2>
+      <div class="container">
+        <div class="specials__swiper swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <article class="card card--product">
                 <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Foramationdi Venkash</h3>
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Aminatiom Descentation
+                  </a>
+                </h3>
                 <fieldset class="rating">
                   <legend class="visually-hidden">Рейтинг товара</legend>
                   <div class="rating__group">
@@ -342,9 +1679,9 @@
                   </div>
                 </fieldset>
                 <div class="card__price">
-                  <span class="card__price">$122</span>
-                  <span class="card__discount">50%</span>
-                  <span class="card__old-price"><del>$241.99</del></span>
+                  <span class="card__price">$1,082.00</span>
+                  <span class="card__discount">10%</span>
+                  <span class="card__old-price"><del>$1, 202.00</del></span>
                 </div>
                 <button class="card__button">Add to cart</button>
               </article>
@@ -352,70 +1689,16 @@
             <div class="swiper-slide">
               <article class="card card--product">
                 <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Varius Neque At Enim</h3>
-                <fieldset class="rating">
-                  <legend class="visually-hidden">Рейтинг товара</legend>
-                  <div class="rating__group">
-                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                    <div class="rating__focus"></div>
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
                   </div>
-                </fieldset>
-                <div class="card__price">
-                  <span class="card__price">$122</span>
-                </div>
-                <button class="card__button">Add to cart</button>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="card card--product">
-                <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Suspendisse Massa Nulla</h3>
-                <fieldset class="rating">
-                  <legend class="visually-hidden">Рейтинг товара</legend>
-                  <div class="rating__group">
-                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                    <div class="rating__focus"></div>
-                  </div>
-                </fieldset>
-                <div class="card__price">
-                  <span class="card__price">$62.00</span>
-                  <span class="card__discount">50%</span>
-                  <span class="card__old-price"><del>$122.00</del></span>
-                </div>
-                <button class="card__button">Add to cart</button>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="card card--product">
-                <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Bhumitationa Centyraon</h3>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Bhumitationa Centyraon
+                  </a>
+                </h3>
                 <fieldset class="rating">
                   <legend class="visually-hidden">Рейтинг товара</legend>
                   <div class="rating__group">
@@ -443,10 +1726,16 @@
             <div class="swiper-slide">
               <article class="card card--product">
                 <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Mauris Blandit Vehicula</h3>
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Cum Sociis Natoque
+                  </a>
+                </h3>
                 <fieldset class="rating">
                   <legend class="visually-hidden">Рейтинг товара</legend>
                   <div class="rating__group">
@@ -464,71 +1753,9 @@
                   </div>
                 </fieldset>
                 <div class="card__price">
-                  <span class="card__price">$1,000.00</span>
-                  <span class="card__discount">50%</span>
-                  <span class="card__old-price"><del>$2,000.00</del></span>
-                </div>
-                <button class="card__button">Add to cart</button>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="card card--product">
-                <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Aminatiom Descentation</h3>
-                <fieldset class="rating">
-                  <legend class="visually-hidden">Рейтинг товара</legend>
-                  <div class="rating__group">
-                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                    <div class="rating__focus"></div>
-                  </div>
-                </fieldset>
-                <div class="card__price">
-                  <span class="card__price">$1,082.00</span>
-                  <span class="card__discount">10%</span>
-                  <span class="card__old-price"><del>$1,202.00</del></span>
-                </div>
-                <button class="card__button">Add to cart</button>
-              </article>
-            </div>
-            <div class="swiper-slide">
-              <article class="card card--product">
-                <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Tarundecf Beseking</h3>
-                <fieldset class="rating">
-                  <legend class="visually-hidden">Рейтинг товара</legend>
-                  <div class="rating__group">
-                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                    <div class="rating__focus"></div>
-                  </div>
-                </fieldset>
-                <div class="card__price">
-                  <span class="card__price">$482.00</span>
+                  <span class="card__price">$98.00</span>
                   <span class="card__discount">20%</span>
-                  <span class="card__old-price"><del>$602.00</del></span>
+                  <span class="card__old-price"><del>$122.00</del></span>
                 </div>
                 <button class="card__button">Add to cart</button>
               </article>
@@ -536,10 +1763,16 @@
             <div class="swiper-slide">
               <article class="card card--product">
                 <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Curabitur Dolor Nunc</h3>
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Curabitur Dolor Nunc
+                  </a>
+                </h3>
                 <fieldset class="rating">
                   <legend class="visually-hidden">Рейтинг товара</legend>
                   <div class="rating__group">
@@ -567,10 +1800,16 @@
             <div class="swiper-slide">
               <article class="card card--product">
                 <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-                </div>
-                <h3 class="card__title">Suspendisse Potenti</h3>
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Foramationdi Venkash
+                  </a>
+                </h3>
                 <fieldset class="rating">
                   <legend class="visually-hidden">Рейтинг товара</legend>
                   <div class="rating__group">
@@ -588,7 +1827,9 @@
                   </div>
                 </fieldset>
                 <div class="card__price">
-                  <span class="card__price">$122.00</span>
+                  <span class="card__price">$122</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price"><del>$241.00</del></span>
                 </div>
                 <button class="card__button">Add to cart</button>
               </article>
@@ -596,10 +1837,164 @@
             <div class="swiper-slide">
               <article class="card card--product">
                 <div class="card__inner">
-                  <img class="card__img" src="#" width="" height="" alt="">
-                  <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Mauris Blandit Vehicul
+                  </a>
+                a</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$1,000.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price"><del>$2,000.00</del></span>
                 </div>
-                <h3 class="card__title">Tellus Eu Volutpat Varius</h3>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Meghpolo Nepturis
+                  </a>
+                </h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$242.00</span>
+                  <span class="card__discount">29%</span>
+                  <span class="card__old-price"><del>$337.99</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Suspendisse Massa Null
+                  </a>
+                a</h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$62.00</span>
+                  <span class="card__discount">50%</span>
+                  <span class="card__old-price"><del>$122.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Tarundecf Beseking
+                  </a>
+                </h3>
+                <fieldset class="rating">
+                  <legend class="visually-hidden">Рейтинг товара</legend>
+                  <div class="rating__group">
+                    <input class="rating__input" type="radio" name="card" id="card-1" value="1">
+                    <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-2" value="2">
+                    <label class="rating__star" for="card-2" aria-label="Сносно"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
+                    <label class="rating__star" for="card-3" aria-label="Нормально"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-4" value="4">
+                    <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
+                    <input class="rating__input" type="radio" name="card" id="card-5" value="5">
+                    <label class="rating__star" for="card-5" aria-label="Отлично"></label>
+                    <div class="rating__focus"></div>
+                  </div>
+                </fieldset>
+                <div class="card__price">
+                  <span class="card__price">$482.00</span>
+                  <span class="card__discount">20%</span>
+                  <span class="card__old-price"><del>$602.00</del></span>
+                </div>
+                <button class="card__button">Add to cart</button>
+              </article>
+            </div>
+            <div class="swiper-slide">
+              <article class="card card--product">
+                <div class="card__inner">
+                  <a class="card__img-link" href="#">
+                    <img class="card__img" src="#" width="" height="" alt="">
+                    <img class="card__img card__img--additional" src="#" width="" height="" alt="">
+                  </a>
+                  </div>
+                <h3 class="card__title">
+                  <a href="card__title-link">
+                    Tellus Eu Volutpat Var
+                  </a>
+                ius</h3>
                 <fieldset class="rating">
                   <legend class="visually-hidden">Рейтинг товара</legend>
                   <div class="rating__group">
@@ -629,506 +2024,147 @@
           <div class="swiper-button-next"></div>
         </div>
       </div>
-      <div class="products__banner">
-        <div class="products__item">
-          <article class="banner">
-            <div class="banner__inner">
-              <a class="banner__img-link" href="#">
-                <img class="banner__img" src="#" width="" height="" alt="">
-              </a>
-            </div>
-            <div class="banner__content">
-              <p class="banner__label banner__label--discount">40% Off</p>
-              <p class="banner__tagline">Explore our range</p>
-              <h3 class="banner__title">Fashion Lab</h3>
-            </div>
-          </article>
-        </div>
-        <div class="products__item">
-          <article class="banner">
-            <div class="banner__inner">
-              <a class="banner__img-link" href="#">
-                <img class="banner__img" src="#" width="" height="" alt="">
-              </a>
-            </div>
-            <div class="banner__content">
-              <p class="banner__label banner__label--discount">50% Off</p>
-              <p class="banner__tagline">Stylish Designs</p>
-              <h3 class="banner__title">Elect Dron</h3>
-            </div>
-          </article>
-        </div>
-        <div class="products__item">
-          <article class="banner">
-            <div class="banner__inner">
-              <a class="banner__img-link" href="#">
-                <img class="banner__img" src="#" width="" height="" alt="">
-              </a>
-            </div>
-            <div class="banner__content">
-              <p class="banner__label banner__label--discount">Limited Edition</p>
-              <p class="banner__tagline">Lorem Ipsum is simply dummy text of the printing and tyeseting industry. </p>
-              <h3 class="banner__title">Summer Special Off</h3>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <section class="specials">
-      <h2 class="visually-hidden">Special offers</h2>
-      <div class="specials__swiper swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Aminatiom Descentation</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$1,082.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price"><del>$1, 202.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Bhumitationa Centyraon</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$842.00</span>
-                <span class="card__discount">30%</span>
-                <span class="card__old-price"><del>$1,202.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Cum Sociis Natoque</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$98.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price"><del>$122.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Curabitur Dolor Nunc</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$110.00</span>
-                <span class="card__discount">10%</span>
-                <span class="card__old-price"><del>$122.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Foramationdi Venkash</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$122</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price"><del>$241.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Mauris Blandit Vehicula</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$1,000.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price"><del>$2,000.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Meghpolo Nepturis</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$242.00</span>
-                <span class="card__discount">29%</span>
-                <span class="card__old-price"><del>$337.99</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Suspendisse Massa Nulla</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$62.00</span>
-                <span class="card__discount">50%</span>
-                <span class="card__old-price"><del>$122.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Tarundecf Beseking</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$482.00</span>
-                <span class="card__discount">20%</span>
-                <span class="card__old-price"><del>$602.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-          <div class="swiper-slide">
-            <article class="card card--product">
-              <div class="card__inner">
-                <img class="card__img" src="#" width="" height="" alt="">
-                <img class="card__img card__img--additional" src="#" width="" height="" alt="">
-              </div>
-              <h3 class="card__title">Tellus Eu Volutpat Varius</h3>
-              <fieldset class="rating">
-                <legend class="visually-hidden">Рейтинг товара</legend>
-                <div class="rating__group">
-                  <input class="rating__input" type="radio" name="card" id="card-1" value="1">
-                  <label class="rating__star" for="card-1" aria-label="Ужасно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-2" value="2">
-                  <label class="rating__star" for="card-2" aria-label="Сносно"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-3" value="3" checked>
-                  <label class="rating__star" for="card-3" aria-label="Нормально"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-4" value="4">
-                  <label class="rating__star" for="card-4" aria-label="Хорошо"></label>
-                  <input class="rating__input" type="radio" name="card" id="card-5" value="5">
-                  <label class="rating__star" for="card-5" aria-label="Отлично"></label>
-                  <div class="rating__focus"></div>
-                </div>
-              </fieldset>
-              <div class="card__price">
-                <span class="card__price">$122.00</span>
-                <span class="card__discount">1%</span>
-                <span class="card__old-price"><del>$123.00</del></span>
-              </div>
-              <button class="card__button">Add to cart</button>
-            </article>
-          </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
       <div class="brands">
-        <div class="brands__list">
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
-          </div>
-          <div class="brands__item">
-            <img class="brands__img" src="#" width="" height="" alt="">
+        <div class="container">
+          <div class="brands__list">
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
+            <div class="brands__item">
+              <img class="brands__img" src="#" width="" height="" alt="">
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="blog">
-      <h2 class="main__title">Latest Blog</h2>
-      <div class="blog__list">
-        <div class="blog__item">
-          <article class="blog__card">
-            <div class="blog__inner">
-              <img class="blog__img" src="#" width="" height="" alt="">
-              <button class="blog__button" type="button" title="Click to view full image"></button>
-              <a class="blog__link" href="#" title="Click to read more"></a>
-            </div>
-            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
-            <h3 class="blog__title">ligula quam Vestibulum consequat convallis</h3>
-          </article>
-        </div>
-
-
-        <div class="blog__item">
-          <article class="blog__card">
-            <div class="blog__inner">
-              <img class="blog__img" src="#" width="" height="" alt="">
-              <button class="blog__button" type="button" title="Click to view full image"></button>
-              <a class="blog__link" href="#" title="Click to read more"></a>
-            </div>
-            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
-            <h3 class="blog__title">Laoreet Vestibulum lacinia massa a commodo habitasse velit</h3>
-          </article>
-        </div>
-        <div class="blog__item">
-          <article class="blog__card">
-            <div class="blog__inner">
-              <img class="blog__img" src="#" width="" height="" alt="">
-              <button class="blog__button" type="button" title="Click to view full image"></button>
-              <a class="blog__link" href="#" title="Click to read more"></a>
-            </div>
-            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
-            <h3 class="blog__title">Nullam ullamcorper nisl quis ornare molestie</h3>
-          </article>
-        </div>
-        <div class="blog__item">
-          <article class="blog__card">
-            <div class="blog__inner">
-              <img class="blog__img" src="#" width="" height="" alt="">
-              <button class="blog__button" type="button" title="Click to view full image"></button>
-              <a class="blog__link" href="#" title="Click to read more"></a>
-            </div>
-            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
-            <h3 class="blog__title">Turpis at eleifend ps mi elit Aenean porta ac sed faucibus</h3>
-          </article>
-        </div>
-        <div class="blog__item">
-          <article class="blog__card">
-            <div class="blog__inner">
-              <img class="blog__img" src="#" width="" height="" alt="">
-              <button class="blog__button" type="button" title="Click to view full image"></button>
-              <a class="blog__link" href="#" title="Click to read more"></a>
-            </div>
-            <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
-            <h3 class="blog__title"> Morbi condimentum molestie Nam enim odio sodales</h3>
-          </article>
+      <div class="container">
+        <h2 class="main__title">Latest Blog</h2>
+        <div class="blog__list">
+          <div class="blog__item">
+            <article class="blog__card">
+              <div class="blog__inner">
+                <img class="blog__img" src="#" width="" height="" alt="">
+                <button class="blog__button" type="button" title="Click to view full image"></button>
+                <a class="blog__link" href="#" title="Click to read more"></a>
+              </div>
+              <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+              <h3 class="blog__title">ligula quam Vestibulum consequat convallis</h3>
+            </article>
+          </div>
+          <div class="blog__item">
+            <article class="blog__card">
+              <div class="blog__inner">
+                <img class="blog__img" src="#" width="" height="" alt="">
+                <button class="blog__button" type="button" title="Click to view full image"></button>
+                <a class="blog__link" href="#" title="Click to read more"></a>
+              </div>
+              <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+              <h3 class="blog__title">Laoreet Vestibulum lacinia massa a commodo habitasse velit</h3>
+            </article>
+          </div>
+          <div class="blog__item">
+            <article class="blog__card">
+              <div class="blog__inner">
+                <img class="blog__img" src="#" width="" height="" alt="">
+                <button class="blog__button" type="button" title="Click to view full image"></button>
+                <a class="blog__link" href="#" title="Click to read more"></a>
+              </div>
+              <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+              <h3 class="blog__title">Nullam ullamcorper nisl quis ornare molestie</h3>
+            </article>
+          </div>
+          <div class="blog__item">
+            <article class="blog__card">
+              <div class="blog__inner">
+                <img class="blog__img" src="#" width="" height="" alt="">
+                <button class="blog__button" type="button" title="Click to view full image"></button>
+                <a class="blog__link" href="#" title="Click to read more"></a>
+              </div>
+              <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+              <h3 class="blog__title">Turpis at eleifend ps mi elit Aenean porta ac sed faucibus</h3>
+            </article>
+          </div>
+          <div class="blog__item">
+            <article class="blog__card">
+              <div class="blog__inner">
+                <img class="blog__img" src="#" width="" height="" alt="">
+                <button class="blog__button" type="button" title="Click to view full image"></button>
+                <a class="blog__link" href="#" title="Click to read more"></a>
+              </div>
+              <time class="blog__date" datetime="2018-09-18">18, 09, 2018</time>
+              <h3 class="blog__title"> Morbi condimentum molestie Nam enim odio sodales</h3>
+            </article>
+          </div>
         </div>
       </div>
     </section>
     <section class="advantages">
       <h2 class="visually-hidden">Our advantages</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <article class="advantages__card">
-            <div class="advantages__inner">
-              <img class="advantages__img" src="#" width="" height="" alt="">
-            </div>
-            <h3 class="advantages__title">Free world delivery</h3>
-            <p class="advantages__description">Orders over 100$</p>
-          </article>
-        </li>
-        <li class="advantages__item">
-          <article class="advantages__card">
-            <div class="advantages__inner">
-              <img class="advantages__img" src="#" width="" height="" alt="">
-            </div>
-            <h3 class="advantages__title">Money back guarantee</h3>
-            <p class="advantages__description">With a 30 days</p>
-          </article>
-        </li>
-        <li class="advantages__item">
-          <article class="advantages__card">
-            <div class="advantages__inner">
-              <img class="advantages__img" src="#" width="" height="" alt="">
-            </div>
-            <h3 class="advantages__title">Best online support</h3>
-            <p class="advantages__description">Hours: 8<span class="advantages__time">am</span> - 11<span class="advantages__time">pm</span></p>
-          </article>
-        </li>
-        <li class="advantages__item">
-          <article class="advantages__card">
-            <div class="advantages__inner">
-              <img class="advantages__img" src="#" width="" height="" alt="">
-            </div>
-            <h3 class="advantages__title">East and free returns</h3>
-            <p class="advantages__description">Hours: 8<span class="advantages__time">am</span> - 11<span class="advantages__time">pm</span></p>
-          </article>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <article class="advantages__card">
+              <div class="advantages__inner">
+                <img class="advantages__img" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="advantages__title">Free world delivery</h3>
+              <p class="advantages__description">Orders over 100$</p>
+            </article>
+          </li>
+          <li class="advantages__item">
+            <article class="advantages__card">
+              <div class="advantages__inner">
+                <img class="advantages__img" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="advantages__title">Money back guarantee</h3>
+              <p class="advantages__description">With a 30 days</p>
+            </article>
+          </li>
+          <li class="advantages__item">
+            <article class="advantages__card">
+              <div class="advantages__inner">
+                <img class="advantages__img" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="advantages__title">Best online support</h3>
+              <p class="advantages__description">Hours: 8<span class="advantages__time">am</span> - 11<span class="advantages__time">pm</span></p>
+            </article>
+          </li>
+          <li class="advantages__item">
+            <article class="advantages__card">
+              <div class="advantages__inner">
+                <img class="advantages__img" src="#" width="" height="" alt="">
+              </div>
+              <h3 class="advantages__title">East and free returns</h3>
+              <p class="advantages__description">Hours: 8<span class="advantages__time">am</span> - 11<span class="advantages__time">pm</span></p>
+            </article>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer class="footer">

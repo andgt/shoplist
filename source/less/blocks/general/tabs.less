@@ -1,0 +1,24 @@
+.tabs {
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto -30px auto;
+  z-index: 5;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 460px;
+    margin-bottom: -60px;
+  }
+}
+
+.tabs__list {
+  .offset(0; 0);
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -98,7 +98,7 @@
 
 .brands__swiper .swiper-button-prev,
 .brands__swiper .swiper-button-next {
-  /*top: 22px;*/
+  visibility: hidden;
   width: 25px;
   height: 24px;
   background-image: url("../img/icon/arrow-product.svg");
@@ -106,6 +106,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   transition: 0.5s ease;
+  opacity: 0;
   z-index: 6;
 
   &::after {
@@ -114,6 +115,30 @@
 }
 
 .brands__swiper .swiper-button-prev {
-  left: 0;
-  transform: rotate(180deg);
+  left: 5px;
+  transform: rotate(180deg) translateX(50px);
+}
+
+.brands__swiper .swiper-button-next {
+  right: 5px;
+  transform: translateX(50px);
+}
+
+.brands__swiper:hover .swiper-button-prev,
+.brands__swiper:hover .swiper-button-next {
+  visibility: visible;
+  opacity: 1;
+}
+
+.brands__swiper:hover .swiper-button-prev {
+  transform: rotate(180deg) translateX(0);
+}
+
+.brands__swiper:hover .swiper-button-next {
+  transform: translateX(0);
+}
+
+.brands__swiper .swiper-button-prev:hover,
+.brands__swiper .swiper-button-next:hover {
+  background-image: url("../img/icon/arrow-brand-hover.svg");
 }

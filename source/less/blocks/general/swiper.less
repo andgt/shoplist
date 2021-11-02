@@ -38,7 +38,9 @@
 }
 
 .products__swiper .swiper-button-prev,
-.products__swiper .swiper-button-next {
+.products__swiper .swiper-button-next,
+.specials__swiper .swiper-button-prev,
+.specials__swiper .swiper-button-next {
   top: 22px;
   width: 25px;
   height: 24px;
@@ -58,15 +60,18 @@
   }
 }
 
-.products__swiper .swiper-button-next:hover {
+.products__swiper .swiper-button-next:hover,
+.specials__swiper .swiper-button-next:hover {
   transform: scale(1.2);
 }
 
-.products__swiper .swiper-button-prev:hover {
+.products__swiper .swiper-button-prev:hover,
+.specials__swiper .swiper-button-prev {
   transform: scale(1.2) rotate(180deg);
 }
 
-.products__swiper .swiper-button-prev {
+.products__swiper .swiper-button-prev,
+.specials__swiper .swiper-button-prev {
   left: auto;
   right: 50px;
   transform: rotate(180deg);
@@ -86,9 +91,4 @@
 
 .promo__swiper .swiper-pagination-bullet-active {
   background-color: @purple;
-}
-
-.specials__swiper .swiper-button-prev,
-.specials__swiper .swiper-button-next {
-  display: none;
 }

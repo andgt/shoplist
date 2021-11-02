@@ -5,6 +5,7 @@
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  word-break: break-all;
 }
 
 .main__title--products {
@@ -12,5 +13,20 @@
     display: flex;
     align-items: center;
     margin-bottom: -60px;
+  }
+}
+
+.main__title--specials {
+  max-width: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: -23px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    margin-bottom: -40px;
   }
 }

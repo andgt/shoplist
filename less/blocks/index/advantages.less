@@ -1,6 +1,6 @@
 .advantages {
   position: relative;
-  .offset(0; 20px 0);
+  .offset(0 0 40px 0; 20px 0);
 
   &::before,
   &::after {
@@ -29,10 +29,6 @@
   gap: 20px;
   .offset(0; 0 20px);
   list-style: none;
-
-  /*@media (min-width: @tablet-width) {
-    justify-items: start;
-  }*/
 }
 
 .advantages__item {
@@ -43,12 +39,6 @@
     min-width: 235px;
   }
 }
-
-/*.advantages__item:nth-child(even) {
-  @media (min-width: @tablet-width) {
-    justify-self: end;
-  }
-}*/
 
 .advantages__item:not(:last-child) {
   @media (min-width: @desktop-width) {

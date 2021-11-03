@@ -171,6 +171,10 @@
   cursor: pointer;
 }
 
+.header__cart {
+  position: relative;
+}
+
 .header__menu-text--account {
   display: none;
 
@@ -179,8 +183,24 @@
   }
 }
 
-.header__menu-text--cart {
+.header__menu-text-cart {
   text-transform: uppercase;
+}
+
+.header__menu-cart-count {
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  color: @white;
+  text-align: center;
+  background-color: @purple;
+  border-radius: 50%;
 }
 
 .header__menu-icon {

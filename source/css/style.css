@@ -258,6 +258,9 @@ a {
   transition: 0.3s ease;
   cursor: pointer;
 }
+.header__cart {
+  position: relative;
+}
 .header__menu-text--account {
   display: none;
 }
@@ -266,8 +269,23 @@ a {
     display: block;
   }
 }
-.header__menu-text--cart {
+.header__menu-text-cart {
   text-transform: uppercase;
+}
+.header__menu-cart-count {
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-size: 11px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #9174ce;
+  border-radius: 50%;
 }
 .header__menu-icon {
   cursor: pointer;

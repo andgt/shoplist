@@ -99,3 +99,22 @@ let tab = function() {
 };
 
 tab();
+
+// Корзина
+
+let cartCount = function() {
+
+  const btnCarts = document.querySelectorAll(".card__button");
+  const basket = document.querySelector(".header__menu-cart-count");
+  let bookmarksCount = 0;
+  let basketCount = 0;
+
+  btnCarts.forEach(btnCart => {
+    btnCart.addEventListener("click", function (evt) {
+    basketCount++;
+    basket.textContent = basketCount;
+    });
+  });
+};
+
+cartCount();

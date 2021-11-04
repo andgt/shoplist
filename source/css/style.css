@@ -80,7 +80,6 @@ a {
   }
 }
 .page {
-  height: 100%;
   min-height: 100%;
   scroll-behavior: smooth;
   background-image: url("../img/desktop/bg-body.jpg");
@@ -131,8 +130,7 @@ a {
 }
 @media (min-width: 768px) {
   .header__top {
-    left: -30px;
-    width: calc(100% + 60px);
+    left: -15px;
   }
 }
 @media (min-width: 1260px) {
@@ -518,6 +516,81 @@ a {
 }
 .products__swiper--show.button__tab {
   color: #9174ce;
+}
+.button__top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 10px;
+  left: auto;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #9174ce;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  box-shadow: 0 0 10px 3px #4f37ad;
+  z-index: 50;
+}
+.button__top::before,
+.button__top::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 2px;
+  height: 12px;
+  background-color: #f5f5f5;
+  transition: 0.5s ease;
+}
+.button__top::before {
+  left: 11px;
+  transform: rotate(32deg);
+}
+.button__top::after {
+  left: auto;
+  right: 11px;
+  transform: rotate(-32deg);
+}
+.button__top:hover {
+  background-color: #000000;
+  transition: 0.5s ease;
+}
+.button__top:hover::before,
+.button__top:hover::after {
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .button__top {
+    bottom: 20px;
+    left: auto;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .button__top::before,
+  .button__top::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    width: 2px;
+    height: 15px;
+    background-color: #f5f5f5;
+    transition: 0.5s ease;
+  }
+  .button__top::before {
+    left: 15px;
+    transform: rotate(32deg);
+  }
+  .button__top::after {
+    left: auto;
+    right: 15px;
+    transform: rotate(-32deg);
+  }
+}
+.button__top--showed {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s ease;
 }
 .main__title {
   max-width: 200px;
@@ -2059,7 +2132,7 @@ a {
   visibility: hidden;
   flex-shrink: 0;
   width: 40px;
-  height: 44px;
+  height: 40px;
   background-color: #9174ce;
   border: 2px solid #ffffff;
   border-radius: 50%;

@@ -118,3 +118,30 @@ let cartCount = function() {
 };
 
 cartCount();
+
+// Кнопка наверх
+
+let buttonUp = function() {
+  let buttonTop = document.querySelector(".button__top");
+  let maxHeight = document.documentElement.scrollHeight - 1000;
+
+  if (window.pageYOffset > 100) {
+    buttonTop.classList.add("button__top--showed");
+  } else {
+    buttonTop.classList.remove("button__top--showed");
+  }
+
+  if (window.pageYOffset > maxHeight) {
+    buttonTop.style.bottom = "260px";
+  } else {
+    buttonTop.style.bottom = "";
+  }
+
+  buttonTop.onclick = function() {
+    window.scrollTo(0, 0);
+  }
+};
+
+window.onscroll = function() {
+  buttonUp();
+};

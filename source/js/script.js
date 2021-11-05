@@ -121,9 +121,18 @@ cartCount();
 
 // Кнопка наверх
 
+let buttonTop = document.querySelector(".button__top");
+let maxHeight = document.documentElement.scrollHeight - 1000;
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth > 1259) {
+    buttonTop.style.bottom = "";
+  } else {
+    buttonTop.style.bottom = "260px";
+  }
+});
+
 let buttonUp = function() {
-  let buttonTop = document.querySelector(".button__top");
-  let maxHeight = document.documentElement.scrollHeight - 1000;
 
   if (window.pageYOffset > 100) {
     buttonTop.classList.add("button__top--showed");
@@ -134,6 +143,10 @@ let buttonUp = function() {
   if (window.pageYOffset > maxHeight) {
     buttonTop.style.bottom = "260px";
   } else {
+    buttonTop.style.bottom = "";
+  }
+
+  if (window.innerWidth > 1259) {
     buttonTop.style.bottom = "";
   }
 

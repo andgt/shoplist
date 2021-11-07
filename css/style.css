@@ -1928,6 +1928,67 @@ a {
     max-width: 297px;
   }
 }
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -800;
+  opacity: 0;
+  transition: 0.5s ease;
+  transform: translateX(100%);
+}
+.modal__opened-page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: hidden;
+}
+.modal--blog-show {
+  visibility: visible;
+  z-index: 800;
+  opacity: 1;
+  transform: translateX(0);
+  transition: 0.5s ease;
+}
+.modal__overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(147, 147, 147, 0.5);
+  border-radius: 20px;
+}
+.modal__inner {
+  max-width: 913px;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(147, 147, 147, 0.5);
+  border-radius: 20px;
+}
+.modal__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border-radius: 20px;
+}
 .promo {
   margin: 0 0 40px 0;
   padding: 0;

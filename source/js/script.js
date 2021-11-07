@@ -155,6 +155,43 @@ let buttonUp = function() {
   }
 };
 
+// Фото статей в отдельном окне
+
+let imageView = function() {
+
+  let blogImages = document.querySelectorAll(".blog__button");
+  let modalOverlay = document.querySelector(".modal__overlay");
+  let modalBlog = document.querySelector(".modal--blog");
+  let modalImage = document.querySelector(".modal__img");
+  let page = document.querySelector(".page");
+  let currentPosition;
+  let blogImageLink;
+
+  blogImages.forEach(imageLink  => {
+    imageLink.onclick = function() {
+      blogImageLink = this.getAttribute("data-image");
+
+      modalImage.setAttribute('src', "img/desktop/" + blogImageLink + ".jpg");
+
+      currentPosition = pageYOffset;
+      page.classList.add("modal__opened-page");
+      page.style.top = -currentPosition + "px";
+      modalBlog.classList.add("modal--blog-show");
+    }
+  });
+
+  modalOverlay.onclick = function() {
+    page.classList.remove("modal__opened-page");
+    modalBlog.classList.remove("modal--blog-show");
+    page.style.scrollBehavior = "auto";
+    window.scrollTo(0, currentPosition);
+    page.style.scrollBehavior = "";
+    page.style.top = "";
+  }
+};
+
+imageView();
+
 window.onscroll = function() {
   buttonUp();
 };

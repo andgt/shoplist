@@ -159,7 +159,7 @@ let buttonUp = function() {
 
 let imageView = function() {
 
-  let blogImages = document.querySelectorAll(".blog__button");
+  let blogButtons = document.querySelectorAll(".blog__button");
   let modalOverlay = document.querySelector(".modal__overlay");
   let modalBlog = document.querySelector(".modal--blog");
   let modalImage = document.querySelector(".modal__img");
@@ -167,10 +167,13 @@ let imageView = function() {
   let currentPosition;
   let blogImageLink;
 
-  blogImages.forEach(imageLink  => {
-    imageLink.onclick = function() {
-      blogImageLink = this.getAttribute("data-image");
-      modalImage.src = "img/desktop/" + blogImageLink + ".jpg";
+  blogButtons.forEach(blogButton  => {
+    blogButton.onclick = function() {
+
+      let parentButton = blogButton.parentElement;
+      let imgParent = parentButton.previousElementSibling;
+      let imgLink = imgParent.children[0].getAttribute("src");
+      modalImage.src = imgLink;
       currentPosition = pageYOffset;
       page.classList.add("modal__opened-page");
       page.style.top = -currentPosition + "px";

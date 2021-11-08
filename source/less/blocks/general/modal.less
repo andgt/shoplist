@@ -40,15 +40,19 @@
   height: 100%;
   .offset(0; 20px);
   background-color: @grey10;
-  border-radius: 20px;
 }
 
 .modal__inner {
-  max-width: 913px;
-  height: 600px;
+  max-width: 100%;
+  height: auto;
   .offset(0; 0);
   background-color: @grey10;
   border-radius: 20px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 913px;
+    height: 600px;
+  }
 }
 
 .modal__img {

@@ -170,9 +170,7 @@ let imageView = function() {
   blogImages.forEach(imageLink  => {
     imageLink.onclick = function() {
       blogImageLink = this.getAttribute("data-image");
-
-      modalImage.setAttribute('src', "img/desktop/" + blogImageLink + ".jpg");
-
+      modalImage.src = "img/desktop/" + blogImageLink + ".jpg";
       currentPosition = pageYOffset;
       page.classList.add("modal__opened-page");
       page.style.top = -currentPosition + "px";

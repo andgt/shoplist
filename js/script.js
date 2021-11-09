@@ -167,9 +167,10 @@ let imageView = function() {
   let currentPosition;
   let blogImageLink;
 
+  // Открытие окна с изображением
+
   blogButtons.forEach(blogButton  => {
     blogButton.onclick = function() {
-
       let parentButton = blogButton.parentElement;
       let imgParent = parentButton.previousElementSibling;
       let imgLink = imgParent.children[0].getAttribute("src");
@@ -181,14 +182,26 @@ let imageView = function() {
     }
   });
 
-  modalOverlay.onclick = function() {
+  // Закрытие окна с изображением
+
+  let closeModal = function() {
     page.classList.remove("modal__opened-page");
     modalBlog.classList.remove("modal--blog-show");
     page.style.scrollBehavior = "auto";
     window.scrollTo(0, currentPosition);
     page.style.scrollBehavior = "";
     page.style.top = "";
+  };
+
+  modalOverlay.onclick = function() {
+    closeModal();
   }
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+      closeModal();
+    }
+  });
 };
 
 imageView();

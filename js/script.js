@@ -169,18 +169,22 @@ let imageView = function() {
 
   // Открытие окна с изображением
 
-  blogButtons.forEach(blogButton  => {
-    blogButton.onclick = function() {
-      let parentButton = blogButton.parentElement;
-      let imgParent = parentButton.previousElementSibling;
-      let imgLink = imgParent.children[0].getAttribute("src");
-      modalImage.src = imgLink;
-      currentPosition = pageYOffset;
-      page.classList.add("modal__opened-page");
-      page.style.top = -currentPosition + "px";
-      modalBlog.classList.add("modal--blog-show");
-    }
-  });
+  let openModal = function() {
+    blogButtons.forEach(blogButton  => {
+      blogButton.onclick = function() {
+        let parentButton = blogButton.parentElement;
+        let imgParent = parentButton.previousElementSibling;
+        let imgLink = imgParent.children[0].getAttribute("src");
+        modalImage.src = imgLink;
+        currentPosition = pageYOffset;
+        page.classList.add("modal__opened-page");
+        page.style.top = -currentPosition + "px";
+        modalBlog.classList.add("modal--blog-show");
+      }
+    });
+  };
+
+  openModal();
 
   // Закрытие окна с изображением
 
